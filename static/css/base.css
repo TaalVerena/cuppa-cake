@@ -10,6 +10,18 @@ body {
     font-family: 'Lato';
 }
 
+.aqua {
+    background-color: #80CBC4;
+}
+
+.pastel-pink {
+    background-color: #F8BBD0;
+}
+
+.grey {
+    background-color: #212529;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -27,9 +39,22 @@ body {
     width: fit-content;
 }
 
+.custom-btn {
+    background: white;
+    color: black !important;
+    min-width: 260px;
+}
+
+.custom-btn:hover,
+.custom-btn:active,
+.custom-btn:focus{
+    background: #212529;
+    color: white !important;
+}
+
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #fc9bbd;
+    color: black;
     min-width: 260px;
 }
 
