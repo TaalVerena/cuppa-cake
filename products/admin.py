@@ -25,6 +25,13 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
+class FlavourAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Flavour)
+admin.site.register(Flavour, FlavourAdmin)
