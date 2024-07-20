@@ -1,0 +1,24 @@
+Hi {{ order.full_name }},
+
+Hooray! Your order from Cuppa Cake is confirmed!🎉
+
+We’re thrilled to sweeten your day with our delicious treats. Here’s a quick recap of your order:
+
+📦 Order Number: {{ order.order_number }}
+🗓️ Order Date: {{ order.date }}
+
+Your order will be shipped to:
+🏡 {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+💵 Order Total: €{{ order.order_total }}
+🚚 Delivery: €{{ order.delivery_cost }}
+💳 Grand Total: €{{ order.grand_total }}
+
+Your bakes are being lovingly crafted and will be on their way to you shortly. 🍪
+
+If you have any questions or need assistance, feel free to reach out to our sweet support team at 📧 {{ contact_email }}.
+
+Thank you for choosing Cuppa Cake! We hope our treats bring a big smile to your face. 😊
+
+Stay sweet,
+The Cuppa Cake Team 🍰✨
