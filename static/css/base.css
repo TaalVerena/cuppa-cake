@@ -9,7 +9,7 @@ body {
 
 /* Hero section styles */
 .hero-section {
-    background: url('/static/images/DALL·E\ 2024-07-21\ 15.08.07\ -\ A\ variety\ of\ elegantly\ decorated\ cakes\ and\ desserts\ arranged\ in\ a\ similar\ style\ to\ the\ provided\ image\,\ with\ more\ space\ at\ the\ top\,\ sides\,\ and\ bottom\,\ .webp') no-repeat center center;
+    background: url('/static/images/cuppa-cake-hero-image-collage.webp') no-repeat center center;
     background-size: cover;
     height: 700px;
     width: 100%;
