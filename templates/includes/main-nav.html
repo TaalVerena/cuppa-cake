@@ -1,8 +1,14 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black text-center" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
         <!-- All bakes menu -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5 btn custom-btn" href="#" id="all-bakes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link btn custom-btn text-center" href="#" id="all-bakes-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Bakes
             </a>
             <!-- Dropdown with further links / options-->
@@ -16,56 +22,76 @@
 
         <!-- Whole lotta cakes menu -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5 btn custom-btn" href="#" id="whole-lotta-cakes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black custom-btn text-center" href="#"
+                id="whole-lotta-cakes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Whole Lotta Cakes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="whole-lotta-cakes-link">
-                <a href="{% url 'products' %}?category=cakes&flavour=choco_delights" class="dropdown-item">Choco Delights</a> 
-                <a href="{% url 'products' %}?category=cakes&flavour=fruity_bliss" class="dropdown-item">Fruity Bliss</a>
-                <a href="{% url 'products' %}?category=cakes&flavour=nutty_and_spiced" class="dropdown-item">Nutty & Spiced</a>
-                <a href="{% url 'products' %}?category=cakes&flavour=whimsical_treats" class="dropdown-item">Whimsical Treats</a>
+                <a href="{% url 'products' %}?category=cakes&flavour=choco_delights" class="dropdown-item">Choco
+                    Delights</a>
+                <a href="{% url 'products' %}?category=cakes&flavour=fruity_bliss" class="dropdown-item">Fruity
+                    Bliss</a>
+                <a href="{% url 'products' %}?category=cakes&flavour=nutty_and_spiced" class="dropdown-item">Nutty &
+                    Spiced</a>
+                <a href="{% url 'products' %}?category=cakes&flavour=whimsical_treats" class="dropdown-item">Whimsical
+                    Treats</a>
                 <a href="{% url 'products' %}?category=cakes" class="dropdown-item">All Cakes</a>
             </div>
         </li>
 
         <!-- Cake jars menu -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5 btn custom-btn" href="#" id="cake-jars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black custom-btn text-center" href="#" id="cake-jars-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cake Jars
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="cake-jars-link">
-                <a href="{% url 'products' %}?category=cake_jars&flavour=choco_delights" class="dropdown-item">Choco Delights</a> 
-                <a href="{% url 'products' %}?category=cake_jars&flavour=fruity_bliss" class="dropdown-item">Fruity Bliss</a>
-                <a href="{% url 'products' %}?category=cake_jars&flavour=nutty_and_spiced" class="dropdown-item">Nutty & Spiced</a>
-                <a href="{% url 'products' %}?category=cake_jars&flavour=whimsical_treats" class="dropdown-item">Whimsical Treats</a>
+                <a href="{% url 'products' %}?category=cake_jars&flavour=choco_delights" class="dropdown-item">Choco
+                    Delights</a>
+                <a href="{% url 'products' %}?category=cake_jars&flavour=fruity_bliss" class="dropdown-item">Fruity
+                    Bliss</a>
+                <a href="{% url 'products' %}?category=cake_jars&flavour=nutty_and_spiced" class="dropdown-item">Nutty &
+                    Spiced</a>
+                <a href="{% url 'products' %}?category=cake_jars&flavour=whimsical_treats"
+                    class="dropdown-item">Whimsical Treats</a>
                 <a href="{% url 'products' %}?category=cake_jars" class="dropdown-item">All Cake Jars</a>
             </div>
         </li>
 
         <!-- Cupcakes menu -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black btn custom-btn" href="#" id="cupcakes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black btn text-center" href="#" id="cupcakes-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cupcakes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="cupcakes-link">
-                <a href="{% url 'products' %}?category=cupcakes&flavour=choco_delights" class="dropdown-item">Choco Delights</a> 
-                <a href="{% url 'products' %}?category=cupcakes&flavour=fruity_bliss" class="dropdown-item">Fruity Bliss</a>
-                <a href="{% url 'products' %}?category=cupcakes&flavour=nutty_and_spiced" class="dropdown-item">Nutty & Spiced</a>
-                <a href="{% url 'products' %}?category=cupcakes&flavour=whimsical_treats" class="dropdown-item">Whimsical Treats</a>
+                <a href="{% url 'products' %}?category=cupcakes&flavour=choco_delights" class="dropdown-item">Choco
+                    Delights</a>
+                <a href="{% url 'products' %}?category=cupcakes&flavour=fruity_bliss" class="dropdown-item">Fruity
+                    Bliss</a>
+                <a href="{% url 'products' %}?category=cupcakes&flavour=nutty_and_spiced" class="dropdown-item">Nutty &
+                    Spiced</a>
+                <a href="{% url 'products' %}?category=cupcakes&flavour=whimsical_treats"
+                    class="dropdown-item">Whimsical Treats</a>
                 <a href="{% url 'products' %}?category=cupcakes" class="dropdown-item">All Cupcakes</a>
             </div>
         </li>
 
         <!-- Cake pop menu -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black btn custom-btn" href="#" id="cake-pops-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black text-center" href="#" id="cake-pops-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cake Pops
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="cake-pops-link">
-                <a href="{% url 'products' %}?category=cake_pops&flavour=choco_delights" class="dropdown-item">Choco Delights</a> 
-                <a href="{% url 'products' %}?category=cake_pops&flavour=fruity_bliss" class="dropdown-item">Fruity Bliss</a>
-                <a href="{% url 'products' %}?category=cake_pops&flavour=nutty_and_spiced" class="dropdown-item">Nutty & Spiced</a>
-                <a href="{% url 'products' %}?category=cake_pops&flavour=whimsical_treats" class="dropdown-item">Whimsical Treats</a>
+                <a href="{% url 'products' %}?category=cake_pops&flavour=choco_delights" class="dropdown-item">Choco
+                    Delights</a>
+                <a href="{% url 'products' %}?category=cake_pops&flavour=fruity_bliss" class="dropdown-item">Fruity
+                    Bliss</a>
+                <a href="{% url 'products' %}?category=cake_pops&flavour=nutty_and_spiced" class="dropdown-item">Nutty &
+                    Spiced</a>
+                <a href="{% url 'products' %}?category=cake_pops&flavour=whimsical_treats"
+                    class="dropdown-item">Whimsical Treats</a>
                 <a href="{% url 'products' %}?category=cake_pops" class="dropdown-item">All Cake Pops</a>
             </div>
         </li>
