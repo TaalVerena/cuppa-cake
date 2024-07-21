@@ -135,20 +135,27 @@
 <script>
     // Update quantity on click
     $('.update-link').click(function(e) {
+        e.preventDefault();
         var form = $(this).prev('.update-form');
         form.submit();
     });
+
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
+        e.preventDefault();
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = '/bag/remove/' + itemId + '/';
         var data = {
             'csrfmiddlewaretoken': csrfToken,
         };
+
         $.post(url, data)
-            .done(function() {
+            .done(function(response) {
                 location.reload();
+            })
+            .fail(function(xhr, status, error) {
+                console.error("Error removing item:", status, error); // Debug log
             });
     });
 </script>
