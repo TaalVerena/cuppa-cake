@@ -2,16 +2,78 @@ html {
     height: 100%;
 }
 
-body {
-    background: url('/media/cuppa-cake-homepage-hero-image.webp') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px); 
+body { 
     color: #555;
     font-family: 'Lato';
 }
 
+/* Hero section styles */
+.hero-section {
+    background: url('/static/images/DALL·E\ 2024-07-21\ 15.08.07\ -\ A\ variety\ of\ elegantly\ decorated\ cakes\ and\ desserts\ arranged\ in\ a\ similar\ style\ to\ the\ provided\ image\,\ with\ more\ space\ at\ the\ top\,\ sides\,\ and\ bottom\,\ .webp') no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text-container {
+    text-align: center;
+    color: black;
+}
+
+/* Header & footer styles */
 .aqua {
     background-color: #80CBC4;
+}
+
+.footer-custom .col-lg-3,
+.footer-custom .col-md-6 {
+    margin-bottom: 20px;
+}
+
+.footer-custom .row.justify-content-center {
+    margin-bottom: 0px;
+}
+
+.footer-custom h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-custom p, .footer-custom li, .footer-custom a {
+    font-size: 1.2rem;
+    color: black !important;
+}
+
+.footer-custom .fab {
+    font-size:
+}
+
+.footer-custom .row {
+    justify-content: center;
+}
+
+.footer-custom .col-lg-3, .footer-custom .col-md-6 {
+    flex: 0 0 auto;
+    width: auto;
+    margin-right: 75px;
+    margin-left: 75px;
+}
+
+.footer-custom .text-center {
+    text-align: center;
+}
+
+.footer-custom .me-2 {
+    margin-right: 15px;
+}
+
+.footer-custom hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .pastel-pink {
