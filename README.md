@@ -438,6 +438,10 @@ Cuppa Cake targets customers looking for high-quality cakes, cake jars, cupcakes
 * Influencer marketing: Cuppa Cake aims to collaborate with influencers and bloggers to promote products and reach a wider audience.
 * Facebook business page: Cuppa Cake has created a Facebook business page to connect with customers, share updates, and promote products through social media.
 
+![Facebook Landing Page](README_files/images/facebook-landing-page.png)
+
+![Facebook Post](README_files/images/facebook-post.png)
+
 ## SEO
 ### SEO and Content Strategy
 Utilizing tools like Google Analytics and Ahrefs, we identify and target key search terms relevant to our product offerings. Our content strategy emphasizes Cuppa Cake's expertise and commitment to quality, positioning us as leaders in the baking industry. By creating engaging and informative content, we aim to attract and retain customers, build brand loyalty, and drive organic traffic to the site.
