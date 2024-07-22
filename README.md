@@ -4,7 +4,7 @@ Cuppa Cake is an e-commerce platform that sells a variety of cakes, cake jars, c
 
 The live site can be viewed [here](https://cuppa-cake-66d9c1594728.herokuapp.com/).
 
-![Landing Page](/README_files/img/cuppa-cake-landing-page.png)
+![Landing Page](/README_files/images/cuppa-cake-landing-page.png)
 
 ## Overview
 Cuppa Cake is built with Django, a high-level Python web framework, and uses PostgreSQL for the database. The platform is hosted on Heroku and uses Cloudinary for static and media files storage.
@@ -152,12 +152,12 @@ Below are the epics and user stories developed for Cuppa Cake, each aimed at enh
 
 Wireframes were created using Figma to visualize the layout and design of the website. The wireframes provide a clear representation of the site's structure, navigation, and content, ensuring a consistent and user-friendly design.
 
-![Wireframe Landing Page](/README_files/img/wireframe-landing-page.png)
-![Wireframe Homepage](/README_files/img/wireframe-homepage.png)
+![Wireframe Landing Page](/README_files/images/wireframe-landing-page.png)
+![Wireframe Homepage](/README_files/images/wireframe-homepage.png)
 
 ### Database Schema
 The database schema was created using dbdiagram.io. The schema was created to show the relationships between the different models in the database.
-![Database Schema](/README_files/img/database-schema.png)
+![Database Schema](/README_files/images/database-schema.png)
 
 ### Typography
 
@@ -176,74 +176,148 @@ The color scheme for Cuppa Cake is inspired by the colors of cakes and desserts.
 #### General Navigation
 ##### Navigation Bar
 The navigation bar is located at the top of the page and provides easy access to the main sections of the site. The navigation bar includes links to the home page, product categories, search functionality, user account, shopping cart, and contact page.
+
+![Navigation Bar](/README_files/images/navigation-bar.png)
+
 ##### Landing Page
 The landing page is the first page users see when they visit the site. The landing page includes a hero image, featured categories, and a call-to-action button to encourage users to explore the site.
+
+![Landing Page](/README_files/images/landing-page.png)
+
 ##### Header
 The header is located at the top of the page and includes the site logo, search bar, and user account options. The header is fixed at the top of the page, ensuring easy access to important features as users scroll through the site.
+
+![Navigation Bar](/README_files/images/navigation-bar.png)
+
 ##### Footer
 The footer is located at the bottom of the page and includes social media icons, address, and contact information.
+
+![Footer](/README_files/images/footer.png)
+
 ###### 404 Page
 A custom 404 page is displayed when users navigate to a page that does not exist. The 404 page includes a message informing users that the page is not found and a link to return to the home page.
+
+![404 Page](README_files/images/404-page.png)
 
 #### Authentication
 ##### Registration
 Users can create an account by providing their username, email address, and password. After registration, users can log in to their account to access additional features such as adding products to the shopping cart and placing orders.
+
+![Register](README_files/images/register.png)
+
 ##### Login
 Users can log in to their account by providing their username and password. After logging in, users can access their account information, view order history, and manage their shopping cart.
+
+![Login](README_files/images/login.png)
+
 ##### Logout
 Users can log out of their account by clicking the logout button. After logging out, users are redirected to the home page and must log in again to access their account.
+
+![Logout](README_files/images/logout.png)
 
 #### Profile
 ##### Profile Page
 Users can view and edit their profile information, including their contact number and address. The profile page also displays the user's order history and allows users to manage their shopping cart.
+
+![Profile](README_files/images/profile.png)
+
 ##### Edit Profile
 Users can edit their profile information, including their contact number and address. After editing their profile, users can save the changes and update their account information.
+
+![Profile](README_files/images/profile.png)
 
 #### Products
 ##### Product Page
 The product page displays a list of products available for purchase. Users can view product details, add products to the shopping cart, and filter products by category.
+
+![All Bakes](README_files/images/all-bakes.png)
+
 ##### Search Products
 Users can search for products by entering keywords in the search bar. The search functionality allows users to find specific products quickly and easily.
+
+![Search Bakes](README_files/images/search.png)
+
 ##### Filter Products
 Users can filter products by category to narrow down their search results. The filter functionality allows users to browse products by category, price, and other criteria.
+
+![Filter Bakes](README_files/images/filter.png)
+
 ##### Product Details
 Users can view detailed information about each product, including product name, description, price, and images. The product details page also includes customer ratings.
+
+![Product Details](README_files/images/product-details.png)
+
 ##### Add Product
 Admin users can add new products to the site by providing product information, including product name, description, price, and images. After adding a product, admin users can publish the product to the site.
+
+![Add Product](README_files/images/add-product.png)
+
 ##### Edit Product
 Admin users can edit existing products by updating product information, including product name, description, price, and images. After editing a product, admin users can save the changes and update the product details.
+
+![Edit Product](README_files/images/edit-and-delete-product.png)
+
 ##### Delete Product
 Admin users can delete products from the site by removing the product from the database. After deleting a product, admin users can confirm the deletion and remove the product from the site.
+
+![Delete Product](README_files/images/edit-and-delete-product.png)
 
 #### Bag
 ##### Bag Page
 The bag page displays a list of products added to the shopping bag. Users can view product details, adjust product quantities, and remove products from the bag.
+
+![Shopping Bag](README_files/images/shopping-bag.png)
+
 ##### Add to Bag
 Users can add products to the shopping bag by clicking the "Add to Bag" button on the product details page. After adding a product to the bag, users can view the product in the shopping bag.
+
+![Add to Bag](README_files/images/shopping-bag.png)
+
 ##### Remove from Bag
 Users can remove products from the shopping bag by clicking the "Remove" button next to the product. After removing a product from the bag, users can update the shopping bag.
+
+![Remove from Bag](README_files/images/shopping-bag.png)
+
 ##### Adjust Quantity
 Users can adjust the quantity of products in the shopping bag by entering the desired quantity in the quantity field. After adjusting the quantity, users can update the shopping bag.
+
+![Adjust Quantity](README_files/images/shopping-bag.png)
 
 #### Checkout
 ##### Checkout Page
 The checkout page displays a summary of the order, including product details, shipping information, and payment information. Users can review the order details, enter shipping information, and proceed to payment.
+
+![Checkout](README_files/images/checkout.png)
+
 ##### Payment
 Users can enter payment information, including credit card details, to complete the order. The payment form includes fields for credit card number, expiration date, and security code.
+
+![Checkout Payment](README_files/images/checkout-payment.png)
+
 ##### Order Form
 Users can enter shipping information, including name, address, and contact number, to complete the order. The order form includes fields for shipping address, city, state, and postal code.
+
+![Checkout Information](README_files/images/checkout.png)
+
 ##### Order Confirmation
 After completing the order, users receive an order confirmation with the order details. The order confirmation page displays a summary of the order and users can view their orders from thier profile.
 
 #### Contact
 ##### Contact Page
 The contact page displays contact information with a simple contact form. Users can send messages to the business by entering their name, email address, and message in the contact form.
+
+![Contact](README_files/images/contact.png)
+
 ##### Contact Form
 Users can send messages to the business by entering their name, email address, and message in the contact form. After submitting the contact form, users receive a confirmation message.
+
+![Contact](README_files/images/contact.png)
 
 #### Newsletter
 ##### Newsletter Signup
 Users can sign up for the newsletter by providing their email address. After signing up, users receive email updates about new products, promotions, and special offers.
+
+![Newsletter](README_files/images/newsletter.png)
 
 ## Future Features
 * Product Reviews:
