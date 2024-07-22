@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /products/
+Disallow: /accounts/
+Disallow: /profile/
+Disallow: /checkout/
+Allow: /
+
+Sitemap: https://cuppa-cake-66d9c1594728.herokuapp.com/sitemap.xml
