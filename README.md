@@ -302,6 +302,8 @@ Users can enter shipping information, including name, address, and contact numbe
 ##### Order Confirmation
 After completing the order, users receive an order confirmation with the order details. The order confirmation page displays a summary of the order and users can view their orders from thier profile.
 
+![Order Confirmation](README_files/images/checkout-payment.png)
+
 #### Contact
 ##### Contact Page
 The contact page displays contact information with a simple contact form. Users can send messages to the business by entering their name, email address, and message in the contact form.
