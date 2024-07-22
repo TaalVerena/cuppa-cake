@@ -69,8 +69,9 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Hosting](#hosting)
     - [Version Control](#version-control)
   - [Testing](#testing)
+    - [SEO Testing](#seo-testing)
+    - [Code Validation](#code-validation)
     - [Manual Testing](#manual-testing)
-    - [Automated Testing](#automated-testing)
     - [User Stories Testing](#user-stories-testing)
     - [Bugs](#bugs)
       - [Resolved Bugs](#resolved-bugs)
@@ -80,15 +81,16 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Target Audience](#target-audience)
     - [Marketing Strategy](#marketing-strategy)
   - [SEO](#seo)
-    - [Meta Tags](#meta-tags)
+    - [SEO and Content Strategy](#seo-and-content-strategy)
     - [Sitemap](#sitemap)
+      - [sitemap.xml](#sitemapxml)
     - [robots.txt](#robotstxt)
   - [Deployment](#deployment)
     - [Heroku Deployment](#heroku-deployment)
+    - [Tools](#tools-1)
   - [Credits](#credits)
     - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgements](#acknowledgements)
+    - [Information Resources](#information-resources)
 
 ## User Experience
 ### Agile Methodology
@@ -251,6 +253,15 @@ Users can sign up for the newsletter by providing their email address. After sig
 * Minimum Order Quantity:
     - Set a minimum order quantity for products.
     - Display a message if the order quantity is below the minimum.
+* FAQ Page:
+    - Create a FAQ page with common questions and answers.
+    - Provide information about shipping, returns, and other policies.
+* Blog:
+    - Create a blog with articles about baking, recipes, and cake decorating.
+    - Share tips, tutorials, and inspiration for baking enthusiasts.
+* Newsletter:
+    - Send regular newsletters with updates, promotions, and special offers.
+    - Include product recommendations, recipes, and baking tips in the newsletter.
 
 ## Technologies Used
 ### Languages
@@ -278,36 +289,136 @@ Users can sign up for the newsletter by providing their email address. After sig
 - Git
 
 ## Testing
-### Manual Testing
+### SEO Testing
+* The site was tested using the Lighthouse tool in Chrome DevTools. With an average score of 90 for all pages.
 
-### Automated Testing
+### Code Validation
+* Html was validated using the W3C validator. minor issues were found and will be resolved in future updates.
+* CSS was validated using the W3C CSS validator. No issues were found.
+* Python was validated using the Code Institute Python Linter. Minor issues with length of lines were found and will be resolved in future updates.
+* JSHint was used to validate the JavaScript. No issues were found.
+
+### Manual Testing
+| Test | Description | method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Navigation Bar | Click on each link in the navigation bar | The page should navigate to the corresponding section | The page navigated to the correct section | Pass |
+| 2 | Registration | Register a new user account | The user should be able to register a new account | The user was able to register a new account | Pass |
+| 3 | Login | Log in to the user account | The user should be able to log in to the account | The user was able to log in to the account | Pass |
+| 4 | Logout | Log out of the user account | The user should be able to log out of the account | The user was able to log out of the account | Pass |
+| 5 | Profile | View and edit user profile | The user should be able to view and edit their profile | The user was able to view and edit their profile | Pass |
+| 6 | Products | View product details | The user should be able to view product details | The user was able to view product details | Pass |
+| 7 | Bag | Add products to the shopping bag | The user should be able to add products to the shopping bag | The user was able to add products to the shopping bag | Pass |
+| 8 | Bag | Remove products from the shopping bag | The user should be able to remove products from the shopping bag | The user was able to remove products from the shopping bag | Pass |
+| 9 | Bag | Adjust product quantity in the shopping bag | The user should be able to adjust product quantity in the shopping bag | The user was able to adjust product quantity in the shopping bag | Pass |
+| 10 | Checkout | Proceed to checkout | The user should be able to proceed to checkout | The user was able to proceed to checkout | Pass |
+| 11 | Checkout | Enter shipping information | The user should be able to enter shipping information | The user was able to enter shipping information | Pass |
+| 12 | Checkout | Enter payment information | The user should be able to enter payment information | The user was able to enter payment information | Pass |
+| 13 | Checkout | Order confirmation | The user should receive an order confirmation message | The user received an order confirmation message | Pass |
+| 14 | Contact | Send message to the business | The user should be able to send a message to the business | The user was able to send a message to the business | Pass |
+| 15 | Newsletter | Sign up for the newsletter | The user should be able to sign up for the newsletter | The user was able to sign up for the newsletter | Pass |
+| 16 | View orders | View order history | The user should be able to view order history | The user was able to view order history | Pass |
+| 17 | Update delivery address | Update delivery address | The user should be able to update delivery address | The user was able to update delivery address | Pass |
+| 18 | Search products | Search for products | The user should be able to search for products | The user was able to search for products | Pass |
+| 19 | Filter products | Filter products by category | The user should be able to filter products by category | The user was able to filter products by category | Pass |
+| 20 | Filter products | Filter products by price | The user should be able to filter products by price | The user was able to filter products by price | Pass |
+| 21 | Filter products | Filter products by rating | The user should be able to filter products by rating | The user was able to filter products by rating | Pass |
+| 22 | Sub categories | View sub categories | The user should be able to view sub categories | The user was able to view sub categories | Pass |
+| 23 | Admin | Add products | The admin user should be able to add products | The admin user was able to add products | Pass |
+| 24 | Admin | Edit products | The admin user should be able to edit products | The admin user was able to edit products | Pass |
+| 25 | Admin | Delete products | The admin user should be able to delete products | The admin user was able to delete products | Pass |
+| 26 | 404 page | Navigate to a non-existent page | The user should see a 404 page | The user saw a 404 page | Pass |
+| 27 | Responsive design | View the site on different devices | The site should be responsive and display correctly on all devices | The site was responsive and displayed correctly on all devices | Pass |
 
 ### User Stories Testing
+* Throughout the development process, user stories were tested to ensure that the site meets user requirements and expectations. The user stories were organized into epics and prioritized based on user needs and feedback. The user stories were tested using manual testing and user feedback to ensure that the site is user-friendly and functional.
 
 ### Bugs
 #### Resolved Bugs
+* Decrement button on the bag page was not working correctly on larger screens. The issue was resolved by updating the decrement button functionality to adjust the quantity of products in the shopping bag.
 #### Known Bugs
+* Images hosted on Cloudinary are using http instead of https, this is causing a mixed content error in the console. This is a known issue with Cloudinary and is being worked on by the Cloudinary team. The images are still being displayed correctly on the site.
 
 ## Web Marketing
+Cuppa Cake stands as a B2C e-commerce platform that targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops. The platform offers a range of products for different occasions, including birthdays, weddings, and special events. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through a variety of products, place orders, and contact the business for enquiries.
+
 ### Advantages
+Cuppa Cake offers several advantages to customers, including:
+* Wide range of products: Cuppa Cake offers a variety of cakes, cake jars, cupcakes, and cake pops for different occasions.
+* Easy navigation: The site features a user-friendly design with easy navigation, allowing customers to browse through products and place orders.
+* Secure payment: Cuppa Cake uses secure payment methods to ensure that customer transactions are safe and protected.
+* Customer support: Cuppa Cake provides customer support through a contact form, allowing customers to send messages and enquiries to the business.
+* Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
+* Responsive design: The site is responsive and displays correctly on all devices, providing a seamless shopping experience for customers.
+* SEO: Cuppa Cake is optimized for search engines, allowing customers to find the site easily and increase visibility online.
+* Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
 
 ### Target Audience
+Cuppa Cake targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops for different occasions. The platform is designed for customers who enjoy sweet treats and celebrating special occasions. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through products, place orders, and contact the business for enquiries.
 
 ### Marketing Strategy
+* Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
+* Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
+* Content marketing: Cuppa Cake plans to create a blog with articles about baking, recipes, and cake decorating to engage customers and provide valuable content.
+* Influencer marketing: Cuppa Cake aims to collaborate with influencers and bloggers to promote products and reach a wider audience.
+* Facebook business page: Cuppa Cake has created a Facebook business page to connect with customers, share updates, and promote products through social media.
 
 ## SEO
-### Meta Tags
+### SEO and Content Strategy
+Utilizing tools like Google Analytics and Ahrefs, we identify and target key search terms relevant to our product offerings. Our content strategy emphasizes Cuppa Cake's expertise and commitment to quality, positioning us as leaders in the baking industry. By creating engaging and informative content, we aim to attract and retain customers, build brand loyalty, and drive organic traffic to the site.
 
 ### Sitemap
+#### sitemap.xml
+Site map was generated using [XML Sitemaps](https://www.xml-sitemaps.com/) and then uploaded to the root directory of the site.
 
 ### robots.txt
 
+The robots.txt file was created and uploaded to the root directory of the site.
+
 ## Deployment
 ### Heroku Deployment
+1. Create a Heroku account by going to https://signup.heroku.com/
+2. Create a new app by clicking the "New" button in the top right corner and then click "Create new app".
+3. Enter a name for the app and select the region closest to you.
+4. Click the "Create app" button.
+5. Select "settings" from the top menu.
+6. Click the "Reveal Config Vars" button.
+7. Enter the following environment variables with your values:
+  - STRIPE_PUBLIC_KEY
+  - STRIPE_SECRET_KEY
+  - STRIPE_WH_SECRET
+  - SECRET_KEY
+  - EMAIL_HOST_PASS
+  - EMAIL_HOST_USER
+  - CLOUDINARY_URL
+  - DATABASE_URL
+8. Click buildpacks from the top menu.
+9. Add the following buildpacks:
+  - heroku/python
+10. Click the "Deploy" tab from the top menu.
+11. Click the "Connect to GitHub" button.
+12. Enter https://github.com/TerraBite147/KeyCraft.git and click the "Connect" button.
+13. Click the "Enable Automatic Deploys" button.
+14. Click the "Deploy Branch" button.
+15. Click the "View" button to launch the app.
+
+### Tools
+
+- [Gitpod](https://www.gitpod.io/) - IDE application used to develop code in.
+- [W3C Validator](https://validator.w3.org/) - Validator that checks the markup validity for Web Documents in HTML.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Validator that checks CSS validity.
+- [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) - Validator that checks syntax and stylistic problems in Python code.
+- [Am I responsive](https://ui.dev/amiresponsive) - Generates Responsive images for your website.
+- [Chrome DevTools and Lighthouse](https://developer.chrome.com/docs/devtools/) - Web Developer Tools.
+- [DB Diagram](https://dbdiagram.io/home) - Database Schema Design Tool.
+- [JSHint](https://jshint.com/) - JavaScript Validator.
 
 ## Credits
 ### Content
+* The content for the site was written by the developer.
+* The product images and favicon were generated using [ChatGPT](https://chatgpt.com/).
+* - The Code Institue Boutique Ado walkthrough project was utilized as a frame and guide for the development of this site.
 
-### Media
-
-### Acknowledgements
+### Information Resources
+- [W3Schools - Python](https://www.w3schools.com/python/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Youtube](https://youtube.com/)
