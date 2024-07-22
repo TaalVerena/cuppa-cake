@@ -427,3 +427,65 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
+/* Mailchimp form */
+@media (max-width: 768px) {
+    #mc_embed_signup {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    #mc_embed_signup .mc-field-group label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    #mc_embed_signup .mc-field-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #mc_embed_signup .clear {
+        text-align: center;
+    }
+
+    #mc_embed_signup .clear .button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    #mc_embed_signup {
+        width: 100%;
+    }
+
+    #mc_embed_signup .mc-field-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mc_embed_signup .mc-field-group label {
+        flex: 0 0 20%;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    #mc_embed_signup .mc-field-group input {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    #mc_embed_signup .clear {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #mc_embed_signup .clear .button {
+        flex: 0 0 auto;
+        margin-left: 10px;
+    }
+}
