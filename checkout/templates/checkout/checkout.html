@@ -3,7 +3,7 @@
 {% load bag_tools %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link aria-label="Link to css" rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -39,7 +39,7 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
-                            <a href="{% url 'product_detail' item.product.id %}">
+                            <a aria-label="Link to product image" href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
                                     <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                                 {% else %}
@@ -94,8 +94,8 @@
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                    <a aria-label="Link to create an account" class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
+                                    <a aria-label="Link to login" class="text-info" href="{% url 'account_login' %}">login</a> to save this information
                                 </label>
 							{% endif %}
 						</div>
@@ -111,7 +111,7 @@
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
+						<a aria-label="Link to adjust bag" href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>

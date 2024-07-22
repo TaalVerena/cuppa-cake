@@ -40,6 +40,12 @@
     {% endblock %}
 
     <title>Cuppa Cake {% block extra_title %}{% endblock %}</title>
+    <meta name="description" content="Cuppa Cake is your one-stop online bakery for cakes,
+        gourmet cupcakes, cake pops, and cake jars. 
+        Indulge in our wide variety of delightful treats, perfect for any occasion.">
+    <meta name="keywords" content="custom cakes, gourmet cupcakes,
+        cake pops, cake jars, online bakery,
+        cake delivery, personalized cakes, dessert jars, cake shop, sweet treats">
 </head>
 
 <body>
@@ -47,14 +53,15 @@
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
 
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                <a href="{% url 'home' %}" aria-label="Logo link takes to home page" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>Cuppa</strong> Cake</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-black rounded-0" type="text" name="q"
+                            placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -68,7 +75,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#" id="user-options" aria-label="Link to My Account"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -76,26 +84,32 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" aria-label="Link to Product Management Page"
+                                class="dropdown-item">Product Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" aria-label='Link to My Profile' class="dropdown-item">My
+                                Profile</a>
+                            <a href="{% url 'account_logout' %}" aria-label="Logout Button"
+                                class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" aria-label="Link to account registration"
+                                class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" aria-label="link to login page"
+                                class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a aria-label="Link to shopping cart" class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                            href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        Є{{ grand_total|floatformat:2 }}
+                                    Є{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        €0.00
+                                    €0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -106,7 +120,8 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -115,24 +130,24 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col text-white grey">
-                <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>                
-            </div>            
+                <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+            </div>
         </div>
     </header>
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
     {% endif %}
@@ -169,16 +184,24 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-2 text-center">
                     <h5 class="text-uppercase mb-3">Connect</h5>
-                    <a href="https://www.facebook.com" target="_blank" class="text-black me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.twitter.com" target="_blank" class="text-black me-2"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" class="text-black me-2"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com" target="_blank" class="text-black"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)" class="text-black me-2"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)" class="text-black me-2"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)" class="text-black me-2"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Linkedin page (opens in a new tab)" class="text-black"><i
+                            class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <hr class="pb-1">
         </div>
     </footer>
-    
+
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+    <link aria-label="Link to css" rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -48,7 +48,7 @@
                             {% for order in orders %}
                                 <tr>
                                     <td>
-                                        <a href="{% url 'order_history' order.order_number %}"
+                                        <a aria-label="Link to order number" href="{% url 'order_history' order.order_number %}"
                                         title="{{ order.order_number }}">
                                             {{ order.order_number|truncatechars:6 }}
                                         </a>
