@@ -17,16 +17,18 @@
         </h1>
         <div class="my-5">
             <h4>
-                <a aria-label="Link to chop now" href="{% url 'products' %}"
+                <a aria-label="Link to shop now" href="{% url 'products' %}"
                     class="shop-now-button btn btn-lg rounded text-uppercase py-3">Shop Now</a>
             </h4>
         </div>
     </div>
 </div>
+
 <div class="container my-5">
+    <!-- Content sections with images and text -->
     <div class="row mb-4">
         <div class="col-md-6 order-md-2 text-center">
-            <img src="/static/images/line-drawing-peach.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-peach.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of a peach">
         </div>
         <div class="col-md-6 order-md-1 my-auto text-center">
@@ -36,9 +38,10 @@
                 of flavor, creativity, and pure joy.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 text-center">
-            <img src="/static/images/line-drawing-cupcake-blue.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-cupcake-blue.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of a cupcake">
         </div>
         <div class="col-md-6 my-auto text-center">
@@ -47,9 +50,10 @@
                 every craving. Mix, Match & Munch—because life's too short not to enjoy every bite.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 order-md-2 text-center">
-            <img src="/static/images/line-drawing-cake-red.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-cake-red.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of a cake">
         </div>
         <div class="col-md-6 order-md-1 my-auto text-center">
@@ -58,9 +62,10 @@
                 designed to dazzle your taste buds and make every moment deliciously unforgettable.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 text-center">
-            <img src="/static/images/line-drawing-orange.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-orange.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of an orange">
         </div>
         <div class="col-md-6 my-auto text-center">
@@ -69,10 +74,11 @@
                 desserts—they're edible art, ready to elevate any occasion with layers of flavor and charm.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 order-md-2 text-center">
-            <img src="/static/images/line-drawing-cupcake-yellow.webp" class="img-fluid small-image rounded-image"
-                alt="Line drawing of a cupcake">
+            <img src="{% static 'images/line-drawing-cupcake-yellow.webp' %}"
+                class="img-fluid small-image rounded-image" alt="Line drawing of a cupcake">
         </div>
         <div class="col-md-6 order-md-1 my-auto text-center">
             <h3>Cupcake Delights</h3>
@@ -80,9 +86,10 @@
                 personal treat, our cupcakes are crafted to bring smiles and satisfy sweet cravings.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 text-center">
-            <img src="/static/images/line-drawing-strawberry.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-strawberry.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of a strawberry">
         </div>
         <div class="col-md-6 my-auto text-center">
@@ -92,10 +99,11 @@
             </p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 order-md-2 text-center">
-            <img src="/static/images/line-drawing-cupcake-orange.webp" class="img-fluid small-image rounded-image"
-                alt="Line drawing of a cupcake">
+            <img src="{% static 'images/line-drawing-cupcake-orange.webp' %}"
+                class="img-fluid small-image rounded-image" alt="Line drawing of a cupcake">
         </div>
         <div class="col-md-6 order-md-1 my-auto text-center">
             <h3>Cuppa Classics</h3>
@@ -103,9 +111,10 @@
                 classic flavors with innovative twists, offering instant delight in every bite.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 text-center">
-            <img src="/static/images/line-drawing-cake-yellow.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-cake-yellow.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of a cake">
         </div>
         <div class="col-md-6 my-auto text-center">
@@ -115,9 +124,10 @@
                 delectable foundation.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 order-md-2 text-center">
-            <img src="/static/images/line-drawing-lime.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-lime.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of a lime">
         </div>
         <div class="col-md-6 order-md-1 my-auto text-center">
@@ -126,9 +136,10 @@
                 jars not only keep your treats fresh but also contribute to a sustainable future.</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col-md-6 text-center">
-            <img src="/static/images/line-drawing-cupcake-pink.webp" class="img-fluid small-image rounded-image"
+            <img src="{% static 'images/line-drawing-cupcake-pink.webp' %}" class="img-fluid small-image rounded-image"
                 alt="Line drawing of a cupcake">
         </div>
         <div class="col-md-6 my-auto text-center">
@@ -139,11 +150,13 @@
             <p>Come on, let's get ya some!</p>
         </div>
     </div>
+
     <div class="row mb-4">
         <div class="col text-center">
             <a aria-label="Link to contact page" href="{% url 'contact' %}" class="btn btn-lg btn-primary">Get in
                 Touch</a>
         </div>
     </div>
+
 </div>
 {% endblock %}
