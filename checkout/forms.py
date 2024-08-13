@@ -3,37 +3,53 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    Form for collecting order details.
+    """
+
     class Meta:
         model = Order
-        fields = ('full_name', 'email', 'phone_number',
-                  'street_address1', 'street_address2',
-                  'town_or_city', 'postcode', 'country',
-                  'county',)
+        fields = (
+            "full_name",
+            "email",
+            "phone_number",
+            "street_address1",
+            "street_address2",
+            "town_or_city",
+            "postcode",
+            "country",
+            "county",
+        )
 
     def __init__(self, *args, **kwargs):
         """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        Initialize form with custom placeholders, classes, and autofocus.
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'full_name': 'Full Name',
-            'email': 'Email Address',
-            'phone_number': 'Phone Number',
-            'postcode': 'Postal Code',
-            'town_or_city': 'Town or City',
-            'street_address1': 'Street Address 1',
-            'street_address2': 'Street Address 2',
-            'county': 'County, State or Locality',
+            "full_name": "Full Name",
+            "email": "Email Address",
+            "phone_number": "Phone Number",
+            "postcode": "Postal Code",
+            "town_or_city": "Town or City",
+            "street_address1": "Street Address 1",
+            "street_address2": "Street Address 2",
+            "county": "County, State or Locality",
         }
 
-        self.fields['full_name'].widget.attrs['autofocus'] = True
+        self.fields["full_name"].widget.attrs[
+            "autofocus"
+        ] = True  # Set autofocus on first field
         for field in self.fields:
-            if field != 'country':
+            if field != "country":
                 if self.fields[field].required:
-                    placeholder = f'{placeholders[field]} *'
+                    placeholder = (
+                        f"{placeholders[field]} *"  # Add asterisk for required fields
+                    )
                 else:
                     placeholder = placeholders[field]
-                self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            self.fields[field].label = False
+                self.fields[field].widget.attrs["placeholder"] = placeholder
+            self.fields[field].widget.attrs[
+                "class"
+            ] = "stripe-style-input"  # Add custom CSS class
+            self.fields[field].label = False  # Remove auto-generated labels
