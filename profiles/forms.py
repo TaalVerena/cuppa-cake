@@ -3,14 +3,18 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    Form for updating user profile information.
+    """
+
     class Meta:
         model = UserProfile
-        exclude = ("user",)
+        exclude = ("user",)  # Exclude the user field from the form
 
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        labels and set autofocus on the first field.
         """
         super().__init__(*args, **kwargs)
         placeholders = {
@@ -22,9 +26,12 @@ class UserProfileForm(forms.ModelForm):
             "default_county": "County, State or Locality",
         }
 
+        # Set autofocus on the phone number field
         self.fields["default_phone_number"].widget.attrs["autofocus"] = True
+
         for field in self.fields:
             if field != "default_country":
+                # Set placeholders and CSS classes for each field
                 if self.fields[field].required:
                     placeholder = f"{placeholders[field]} *"
                 else:
@@ -33,4 +40,5 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs[
                     "class"
                 ] = "border-black rounded-0 profile-form-input"
+            # Hide field labels
             self.fields[field].label = False
