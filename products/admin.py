@@ -1,34 +1,32 @@
 from django.contrib import admin
 from .models import Product, Category, Flavour
 
-# Register your models here.
-
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
-        'name',
-        'category',
-        'flavour',
-        'price',
-        'rating',
-        'image',
+        "sku",
+        "name",
+        "category",
+        "flavour",
+        "price",
+        "rating",
+        "image",
     )
 
-    ordering = ('sku',)
+    ordering = ("sku",)
 
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name',
+        "friendly_name",
+        "name",
     )
 
 
 class FlavourAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name',
+        "friendly_name",
+        "name",
     )
 
 
