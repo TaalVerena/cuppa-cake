@@ -1,47 +1,47 @@
 <script>
-    // Disable +/- buttons outside 1-99 range
+    // Disable +/- buttons outside the 1-99 range
     function handleEnableDisable(itemId) {
         var currentValue = parseInt($(`.qty_input[data-item_id="${itemId}"]`).val());
-        var minusDisabled = currentValue <= 1;
-        var plusDisabled = currentValue >= 99;
+        var minusDisabled = currentValue <= 1;  // Disable minus button if value is <= 1
+        var plusDisabled = currentValue >= 99;  // Disable plus button if value is >= 99
         $(`.decrement-qty[data-item_id="${itemId}"]`).prop('disabled', minusDisabled);
         $(`.increment-qty[data-item_id="${itemId}"]`).prop('disabled', plusDisabled);
     }
 
     // Increment quantity
     $('.increment-qty').click(function (e) {
-        e.preventDefault();
+        e.preventDefault();  // Prevent default form submission
         var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
         var currentValue = parseInt($(closestInput).val());
         if (currentValue < 99) {
-            $(closestInput).val(currentValue + 1);
+            $(closestInput).val(currentValue + 1);  // Increment value if < 99
         }
         var itemId = $(this).data('item_id');
-        handleEnableDisable(itemId);
+        handleEnableDisable(itemId);  // Check enable/disable state
     });
 
     // Decrement quantity
     $('.decrement-qty').click(function (e) {
-        e.preventDefault();
+        e.preventDefault();  // Prevent default form submission
         var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
         var currentValue = parseInt($(closestInput).val());
         if (currentValue > 1) {
-            $(closestInput).val(currentValue - 1);
+            $(closestInput).val(currentValue - 1);  // Decrement value if > 1
         }
         var itemId = $(this).data('item_id');
-        handleEnableDisable(itemId);
+        handleEnableDisable(itemId);  // Check enable/disable state
     });
 
     // Ensure proper enabling/disabling of all inputs on page load
     var allQtyInputs = $('.qty_input');
     for (var i = 0; i < allQtyInputs.length; i++) {
         var itemId = $(allQtyInputs[i]).data('item_id');
-        handleEnableDisable(itemId);
+        handleEnableDisable(itemId);  // Initial check of enable/disable state
     }
 
     // Check enable/disable every time the input is changed
     $('.qty_input').change(function () {
         var itemId = $(this).data('item_id');
-        handleEnableDisable(itemId);
+        handleEnableDisable(itemId);  // Update enable/disable state on change
     });
 </script>

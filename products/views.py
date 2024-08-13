@@ -9,8 +9,9 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """A view to show all products, including sorting and search queries"""
-
+    """
+    A view to show all products, including sorting and search queries.
+    """
     products = Product.objects.all()
     query = None
     categories = None
@@ -24,23 +25,29 @@ def all_products(request):
             sort = sortkey
             if sortkey == "name":
                 sortkey = "lower_name"
-                products = products.annotate(lower_name=Lower("name"))
+                products = products.annotate(
+                    lower_name=Lower("name")
+                )  # Annotate for case-insensitive sorting
             if sortkey == "category":
                 sortkey = "category__name"
             if "direction" in request.GET:
                 direction = request.GET["direction"]
                 if direction == "desc":
                     sortkey = f"-{sortkey}"
-            products = products.order_by(sortkey)
+            products = products.order_by(sortkey)  # Sort products based on sort key
 
         if "category" in request.GET:
             categories = request.GET["category"].split(",")
-            products = products.filter(category__name__in=categories)
+            products = products.filter(
+                category__name__in=categories
+            )  # Filter products by category
             categories = Category.objects.filter(name__in=categories)
 
         if "flavour" in request.GET:
             flavours = request.GET["flavour"].split(",")
-            products = products.filter(flavour__name__in=flavours)
+            products = products.filter(
+                flavour__name__in=flavours
+            )  # Filter products by flavour
             flavours = Flavour.objects.filter(name__in=flavours)
 
         if "q" in request.GET:
@@ -49,7 +56,9 @@ def all_products(request):
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse("products"))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query
+            )  # Search by name or description
             products = products.filter(queries)
 
     current_sorting = f"{sort}_{direction}"
@@ -66,9 +75,10 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """A view to show individual product details"""
-
-    product = get_object_or_404(Product, pk=product_id)
+    """
+    A view to show individual product details.
+    """
+    product = get_object_or_404(Product, pk=product_id)  # Retrieve product by ID
 
     context = {
         "product": product,
@@ -79,7 +89,9 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
-    """Add a product to the store"""
+    """
+    Add a product to the store.
+    """
     if not request.user.is_superuser:
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
@@ -92,7 +104,7 @@ def add_product(request):
             return redirect(reverse("product_detail", args=[product.id]))
         else:
             messages.error(
-                request, "Failed to add product. " "Please ensure the form is valid."
+                request, "Failed to add product. Please ensure the form is valid."
             )
     else:
         form = ProductForm()
@@ -107,12 +119,14 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """Edit a product in the store"""
+    """
+    Edit a product in the store.
+    """
     if not request.user.is_superuser:
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)  # Retrieve product by ID
     if request.method == "POST":
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
@@ -121,7 +135,7 @@ def edit_product(request, product_id):
             return redirect(reverse("product_detail", args=[product.id]))
         else:
             messages.error(
-                request, "Failed to update product." "Please ensure the form is valid."
+                request, "Failed to update product. Please ensure the form is valid."
             )
     else:
         form = ProductForm(instance=product)
@@ -138,12 +152,14 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """Delete a product from the store"""
+    """
+    Delete a product from the store.
+    """
     if not request.user.is_superuser:
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
 
-    product = get_object_or_404(Product, pk=product_id)
-    product.delete()
+    product = get_object_or_404(Product, pk=product_id)  # Retrieve product by ID
+    product.delete()  # Delete the product
     messages.success(request, "Product deleted!")
     return redirect(reverse("products"))

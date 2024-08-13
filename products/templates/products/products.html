@@ -15,6 +15,7 @@
     <div class="row">
         <div class="col text-center mt-3">
             <h2>Cuppa Cake Bakes</h2>
+            <!-- Loop through current categories and display as badges -->
             {% for c in current_categories %}
             <a aria-label="Link to friendly name" class="category-badge text-decoration-none"
                 href="{% url 'products' %}?category={{ c.name }}">
@@ -25,10 +26,12 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <!-- Sort selector for products -->
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
                             class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -53,7 +56,9 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="col-12 col-md-6 order-md-first">
+                    <!-- Display current search and category filters -->
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
                         <span aria-label="Link to home" class="small"><a href="{% url 'products' %}">Products Home</a> |
@@ -64,7 +69,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="row">
+                <!-- Loop through products and display each one -->
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
@@ -75,8 +82,8 @@
                         </a>
                         {% else %}
                         <a aria-label="Link to product detail" href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid rounded" src="/static/images/cuppa-cake-no-image.webp"
-                                alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid rounded"
+                                src="{% static 'images/cuppa-cake-no-image.webp' %}" alt="{{ product.name }}">
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
@@ -101,6 +108,7 @@
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
                                     {% if request.user.is_superuser %}
+                                    <!-- Admin links to edit and delete product -->
                                     <small class="ml-3">
                                         <a aria-label="Link to edit" href="{% url 'edit_product' product.id %}">Edit</a>
                                         |
@@ -148,12 +156,14 @@
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
+    // Scroll to top functionality
     $('.btt-link').click(function (e) {
         window.scrollTo(0, 0)
     })
 </script>
 
 <script type="text/javascript">
+    // Sorting functionality
     $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);
