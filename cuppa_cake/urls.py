@@ -30,6 +30,7 @@ urlpatterns = [
     path("bag/", include("bag.urls")),  # Shopping bag routes
     path("checkout/", include("checkout.urls")),  # Checkout process routes
     path("profile/", include("profiles.urls")),  # User profile routes
+    path("faq/", include("faq.urls")),  # FAQ app routes
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )  # Static media configuration
