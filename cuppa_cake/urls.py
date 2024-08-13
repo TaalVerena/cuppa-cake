@@ -22,14 +22,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("accounts/", include("allauth.urls")),
-    path("contact/", include("contact.urls")),
-    path("", include("home.urls")),
-    path("products/", include("products.urls")),
-    path("bag/", include("bag.urls")),
-    path("checkout/", include("checkout.urls")),
-    path("profile/", include("profiles.urls")),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path("admin/", admin.site.urls),  # Admin site
+    path("accounts/", include("allauth.urls")),  # Authentication routes
+    path("contact/", include("contact.urls")),  # Contact app routes
+    path("", include("home.urls")),  # Home page routes
+    path("products/", include("products.urls")),  # Product app routes
+    path("bag/", include("bag.urls")),  # Shopping bag routes
+    path("checkout/", include("checkout.urls")),  # Checkout process routes
+    path("profile/", include("profiles.urls")),  # User profile routes
+] + static(
+    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
+)  # Static media configuration
 
-handler404 = "cuppa_cake.views.handler404"
+handler404 = "cuppa_cake.views.handler404"  # Custom 404 error handler
