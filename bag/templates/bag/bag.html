@@ -14,6 +14,7 @@
 <div class="container mb-2">
     <div class="row">
         <div class="col text-center mt-3">
+            <!-- Page title -->
             <h2 class="logo-font mb-4">Shopping Bag</h2>
             <hr>
         </div>
@@ -21,34 +22,42 @@
 
     <div class="row">
         <div class="col">
-            {% comment %} Display bag items or empty bag message {% endcomment %}
+            <!-- Check if there are items in the bag -->
             {% if bag_items %}
             <div class="d-block d-md-none">
                 <div class="row">
                     <div class="col">
+                        <!-- Display bag total -->
                         {% include "bag/bag-total.html" %}
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
+                        <!-- Checkout buttons -->
                         {% include "bag/checkout-buttons.html" %}
+                        <!-- Bag summary -->
                         <p class="text-muted mb-5">A summary of your bag contents is below</p>
                     </div>
                 </div>
-                {% comment %} List bag items {% endcomment %}
+                <!-- Iterate over each item in the bag -->
                 {% for item in bag_items %}
                 <div class="row">
                     <div class="col-12 col-sm-6 mb-2">
+                        <!-- Product image -->
                         {% include "bag/product-image.html" %}
                     </div>
                     <div class="col-12 col-sm-6 mb-2">
+                        <!-- Product information -->
                         {% include "bag/product-info.html" %}
                     </div>
                     <div class="col-12 col-sm-6 order-sm-last">
+                        <!-- Price per item -->
                         <p class="my-0">Price Each: €{{ item.product.price }}</p>
+                        <!-- Subtotal calculation -->
                         <p><strong>Subtotal: </strong>€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                     <div class="col-12 col-sm-6">
+                        <!-- Quantity form -->
                         {% include "bag/quantity-form.html" %}
                     </div>
                 </div>
@@ -58,6 +67,7 @@
                     </div>
                 </div>
                 {% endfor %}
+                <!-- Back to top button -->
                 <div class="btt-button shadow-sm rounded-0 border border-black">
                     <a class="btt-link d-flex h-100">
                         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
@@ -75,39 +85,47 @@
                             <th scope="col">Subtotal</th>
                         </tr>
                     </thead>
-                    {% comment %} Bag item details {% endcomment %}
+                    <!-- Loop through items and display details in a table -->
                     {% for item in bag_items %}
                     <tr>
                         <td class="p-3 w-25">
+                            <!-- Product image in table -->
                             {% include "bag/product-image.html" %}
                         </td>
                         <td class="py-3">
+                            <!-- Product information in table -->
                             {% include "bag/product-info.html" %}
                         </td>
                         <td class="py-3">
+                            <!-- Price per item in table -->
                             <p class="my-0">€{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
+                            <!-- Quantity form in table -->
                             {% include "bag/quantity-form.html" %}
                         </td>
                         <td class="py-3">
+                            <!-- Subtotal calculation in table -->
                             <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
+                            <!-- Display bag total in table -->
                             {% include "bag/bag-total.html" %}
                         </td>
                     </tr>
                     <tr>
                         <td colspan="5" class="text-right">
+                            <!-- Checkout buttons in table -->
                             {% include "bag/checkout-buttons.html" %}
                         </td>
                     </tr>
                 </table>
             </div>
             {% else %}
+            <!-- Show message when the bag is empty -->
             <p class="lead mb-5">Your bag is empty.</p>
             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                 <span class="icon">
@@ -123,7 +141,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% comment %} Scroll to top on button click {% endcomment %}
+<!-- Script to scroll to top on button click -->
 <script>
     $('.btt-link').click(function(e) {
         window.scrollTo(0, 0);
@@ -131,7 +149,7 @@
 </script>
 {% include 'products/includes/quantity_input_script.html' %}
 
-{% comment %} Update quantity and remove item {% endcomment %}
+<!-- Script to handle quantity updates and item removal -->
 <script>
     // Update quantity on click
     $('.update-link').click(function(e) {
@@ -140,8 +158,8 @@
         form.submit();
     });
 
-    // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+    // Remove item and reload page on click
+    $('.remove-item').click(function (e) {
         e.preventDefault();
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
@@ -152,10 +170,12 @@
 
         $.post(url, data)
             .done(function(response) {
+                // Reload page on success
                 location.reload();
             })
             .fail(function(xhr, status, error) {
-                console.error("Error removing item:", status, error); // Debug log
+                // Log error on failure
+                console.error("Error removing item:", status, error);
             });
     });
 </script>

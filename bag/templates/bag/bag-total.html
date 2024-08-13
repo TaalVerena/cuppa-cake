@@ -1,7 +1,15 @@
+<!-- Display the bag total with two decimal places -->
 <h6><strong>Bag Total: Є{{ total|floatformat:2 }}</strong></h6>
+
+<!-- Display the delivery cost with two decimal places -->
 <h6>Delivery: Є{{ delivery|floatformat:2 }}</h6>
+
+<!-- Display the grand total with two decimal places -->
 <h4 class="mt-4"><strong>Grand Total: Є{{ grand_total|floatformat:2 }}</strong></h4>
+
+<!-- Check if the user is eligible for free delivery -->
 {% if free_delivery_delta > 0 %}
+<!-- Suggest how much more the user needs to spend to qualify for free delivery -->
 <p class="mb-1 text-danger">
     You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
 </p>
