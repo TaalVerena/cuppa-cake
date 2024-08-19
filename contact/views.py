@@ -12,7 +12,14 @@ def contact_view(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Your message has been sent successfully!")
-            return redirect("contact")
+            return redirect("contact_thank_you")
     else:
         form = ContactForm()
     return render(request, "contact/contact.html", {"form": form})
+
+
+def contact_thank_you_view(request):
+    """
+    A view for displaying a thank you message after contact form submission.
+    """
+    return render(request, "contact/thank_you.html")
