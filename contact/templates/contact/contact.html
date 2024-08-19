@@ -12,28 +12,33 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <hr>
-            <h2 class="logo-font mb-4 mt-5">Contact Us</h2>
-            <h5 class="text-muted">We'd love to hear from you</h5>
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row w-100">
+        <div class="col-12 col-md-8 col-lg-6 mx-auto text-center">
+            <hr class="my-4">
+            <h2 class="logo-font mb-3 mt-5" style="color: #fc9bbd;">Let's Chat!</h2>
+            <p class="text-muted mb-4">We’re all ears and ready to help! Whether you’ve got a question, a suggestion, or
+                just want to say hello, we’d love to hear from you.</p>
+            <hr class="my-4">
             <!-- Contact form -->
             <form method="POST" action="{% url 'contact' %}" class="form mb-2">
                 {% csrf_token %}
                 {% for field in form %}
-                {{ field|as_crispy_field }}
+                <div class="mb-3">
+                    {{ field|as_crispy_field }}
+                </div>
                 {% endfor %}
-                <div class="text-right">
-                    <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
-                    <button class="btn btn-black rounded-0" type="submit">Send Message</button>
+                <div class="text-center mt-4">
+                    <a class="btn btn-outline-black rounded-0 me-2" href="{% url 'home' %}"
+                        style="border-color: #fc9bbd; color: #fc9bbd;">Nevermind</a>
+                    <button class="btn rounded-0" type="submit" style="background-color: #fc9bbd; color: white;">Send
+                        Message</button>
                 </div>
             </form>
+            <div class="mt-4">
+                <p class="text-muted">Prefer a more personal touch? Feel free to <a href="tel:+123456789"
+                        style="color: #fc9bbd;">call us</a> or drop by our shop!</p>
+            </div>
         </div>
     </div>
 </div>
