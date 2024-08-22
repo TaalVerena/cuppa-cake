@@ -8,7 +8,7 @@ body {
 }
 
 /* Hero section styles */
-.hero-section {
+#hero-section {
     background: url('/static/images/cuppa-cake-hero-image-collage.webp') no-repeat center center;
     background-size: cover;
     height: 700px;
@@ -17,6 +17,70 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+#hero-text-container {
+    background-color: rgba(128, 203, 196, 0.9);
+    border-radius: 20px;
+    max-width: 70vw;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+#hero-title {
+    font-size: 3rem;
+}
+
+#hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Shop now button styles */
+#shop-now-button {
+    background-color: #fc9bbd;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    display: inline-block;
+    max-width: 100%;
+    white-space: normal;
+}
+
+#shop-now-button:hover {
+    background-color: #e686a6;
+    color: white;
+}
+
+/* CTA Buttons Styles */
+#cta-buttons-row {
+    margin-bottom: 1.5rem;
+}
+
+#get-in-touch-button {
+    background-color: #fc9bbd;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin-right: 10px;
+}
+
+#get-in-touch-button:hover {
+    background-color: #e686a6;
+    color: white;
+}
+
+#our-bakes-button {
+    background-color: #80CBC4;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+#our-bakes-button:hover {
+    background-color: #6fb8b0;
+    color: white;
 }
 
 .text-container {
@@ -84,6 +148,14 @@ body {
     background-color: #212529;
 }
 
+/* Navigation link hover effect */
+.navbar-nav .nav-link:hover {
+    background-color: #fc9bbd !important;
+    color: black !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -123,7 +195,7 @@ body {
 .shop-now-button {
     background: #fc9bbd;
     color: black;
-    min-width: 260px;
+    min-width: 120px;
 }
 
 .btn-black {
@@ -335,7 +407,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #17a2b8;
 }
 
 /* Product Form */
@@ -377,18 +449,26 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 158px;
+    }
+
+    #hero-title {
+        font-size: 2.5rem;
+    }
+
+    #hero-subtitle {
+        font-size: 1.2rem;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 85px;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 85px);
     }
 
     .display-4.logo-font.text-black {
@@ -454,6 +534,19 @@ input[name='q']::placeholder {
     #mc_embed_signup .clear .button {
         width: 100%;
     }
+
+    #hero-title {
+        font-size: 2rem;
+    }
+
+    #hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    #shop-now-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 769px) {
@@ -487,6 +580,28 @@ input[name='q']::placeholder {
     #mc_embed_signup .clear .button {
         flex: 0 0 auto;
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero-title {
+        font-size: 1.75rem;
+    }
+
+    #hero-subtitle {
+        font-size: 1rem;
+    }
+
+    #shop-now-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    #get-in-touch-button,
+    #our-bakes-button {
+        width: 120px;
+        font-size: 0.875rem;
+        padding: 10px 15px;
     }
 }
 
