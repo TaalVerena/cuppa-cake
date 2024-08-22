@@ -489,3 +489,31 @@ input[name='q']::placeholder {
         margin-left: 10px;
     }
 }
+
+/* Footer buttons */
+.contact-button {
+    background-color: #fc9bbd;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: #e686a6;
+    color: white;
+}
+
+.footer-custom .col-lg-3, 
+.footer-custom .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
