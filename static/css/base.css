@@ -7,6 +7,39 @@ body {
     font-family: 'Lato';
 }
 
+/* General Styling */
+.text-dark {
+    color: #333;
+}
+
+.styled-hr {
+    max-width: 80vw;
+    height: 3px;
+    background-color: #fc9bbd;
+    border: none;
+    margin: 10px auto;
+}
+
+.styled-hr-sm {
+    width: 150px;
+    height: 3px;
+    background-color: #80CBC4;
+    border: none;
+    margin: 10px auto;
+}
+
+.styled-hr-xs {
+    width: 100px;
+    height: 2px;
+    background-color: #80CBC4;
+    border: none;
+    margin: 10px auto;
+}
+
+.rounded-image {
+    border-radius: 50%;
+}
+
 /* Hero section styles */
 #hero-section {
     background: url('/static/images/cuppa-cake-hero-image-collage.webp') no-repeat center center;
