@@ -190,7 +190,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* from Bulma */
+/* From Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -310,6 +310,61 @@ input[name='q']::placeholder {
     height: auto;
     margin: auto;
     border-radius: 15px;
+}
+
+/* -------------------------------- Profile Page */
+
+/* Welcome Line Styling */
+.welcome-text {
+    color: #fc9bbd;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Spacing at the bottom of the update information form */
+#profile-update-form {
+    margin-bottom: 30px;
+}
+
+/* Pink Update Information Button */
+#profile-update-form .btn-black {
+    background-color: #fc9bbd; 
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#profile-update-form .btn-black:hover {
+    background-color: #e686a6; 
+    color: white;
+}
+
+/* Blue Back Button */
+.btn-back {
+    background-color: #80CBC4;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: #6fb8b0;
+    color: white;
 }
 
 /* ------------------------------- Product Styling */

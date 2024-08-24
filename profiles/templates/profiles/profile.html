@@ -18,6 +18,8 @@
 <div class="container">
     <div class="row">
         <div class="col">
+            <!-- Welcome Line -->
+            <p class="welcome-text">Welcome to Your Profile!</p>
             <hr>
             <h2 class="logo-font mb-4">My Profile</h2>
             <hr>
@@ -31,7 +33,9 @@
             <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
+                <!-- Align buttons side by side -->
+                <button class="btn btn-black rounded-0 text-uppercase">Update Information</button>
+                <a href="{% url 'home' %}" class="btn btn-back-new text-uppercase">Back</a>
             </form>
         </div>
 
