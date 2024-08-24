@@ -10,7 +10,14 @@
 
 {% block content %}
 <div class="container my-5">
-    <h2>Frequently Asked Questions</h2>
+    <!-- Introductory Text -->
+    <div class="intro-text text-center mb-5">
+        <h2 class="text-pink">Frequently Asked Questions</h2>
+        <p class="lead text-muted">Here you can find answers to the most common questions about our yummy bakes, services,
+            and more. If you have any other questions, feel free to reach out!</p>
+    </div>
+
+    <!-- FAQ Section -->
     <div class="accordion" id="faqAccordion">
         {% for faq in faqs %}
         <div class="card">
@@ -29,9 +36,15 @@
                     {{ faq.answer }}
                 </div>
             </div>
-
         </div>
         {% endfor %}
+    </div>
+
+    <!-- Explore Our Bakes Button -->
+    <div class="text-center mt-5">
+        <a href="{% url 'products' %}" class="btn btn-explore-bakes btn-lg text-uppercase">
+            Explore Our Bakes
+        </a>
     </div>
 </div>
 {% endblock %}
