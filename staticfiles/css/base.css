@@ -314,6 +314,11 @@ input[name='q']::placeholder {
 
 /* ------------------------------- Product Styling */
 
+/* Product List Container */
+#product-list-container {
+    margin-bottom: 50px;
+}
+
 /* Highlight Product Information */
 .product-container .card-body p {
     color: #fc9bbd;
