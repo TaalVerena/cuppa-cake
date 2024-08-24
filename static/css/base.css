@@ -393,6 +393,50 @@ input[name='q']::placeholder {
     z-index: 0;
 }
 
+/* ------------------------------- Product Detail Page Styling */
+
+/* Product Name Styling */
+.product-details-container p.mb-0 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fc9bbd;
+}
+
+/* Increment and Decrement Buttons */
+.product-details-container .input-group .btn-black {
+    background-color: #fc9bbd;
+    border: none;
+}
+
+/* White icons on the pink buttons */
+.product-details-container .input-group .btn-black i {
+    color: white; 
+}
+
+/* Keep Shopping and Add to Bag Buttons */
+.product-details-container .btn-outline-black {
+    border: 1px solid #fc9bbd;
+    color: #fc9bbd;
+}
+
+.product-details-container .btn-outline-black:hover {
+    background-color: #fc9bbd;
+    color: white;
+}
+
+/* Pink background for the buttons */
+.product-details-container .btn-black {
+    background-color: #fc9bbd; 
+    border: none;
+    color: white;
+}
+
+/* Slightly darker pink on hover */
+.product-details-container .btn-black:hover {
+    background-color: #e686a6; 
+}
+
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
