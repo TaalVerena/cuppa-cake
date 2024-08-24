@@ -330,7 +330,7 @@ input[name='q']::placeholder {
 }
 
 /* Pink Update Information Button */
-#profile-update-form .btn-black {
+.btn-update-info {
     background-color: #fc9bbd; 
     border: none;
     color: white;
@@ -339,11 +339,9 @@ input[name='q']::placeholder {
     text-transform: uppercase;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 10px;
-    display: inline-block;
 }
 
-#profile-update-form .btn-black:hover {
+.btn-update-info:hover {
     background-color: #e686a6; 
     color: white;
 }
@@ -358,8 +356,7 @@ input[name='q']::placeholder {
     text-transform: uppercase;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 10px;
-    display: inline-block;
+    margin-right: 10px;
 }
 
 .btn-back:hover {
