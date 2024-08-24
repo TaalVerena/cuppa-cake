@@ -7,9 +7,42 @@ body {
     font-family: 'Lato';
 }
 
+/* General Styling */
+.text-dark {
+    color: #333;
+}
+
+.styled-hr {
+    max-width: 80vw;
+    height: 3px;
+    background-color: #fc9bbd;
+    border: none;
+    margin: 10px auto;
+}
+
+.styled-hr-sm {
+    width: 150px;
+    height: 3px;
+    background-color: #80CBC4;
+    border: none;
+    margin: 10px auto;
+}
+
+.styled-hr-xs {
+    width: 100px;
+    height: 2px;
+    background-color: #80CBC4;
+    border: none;
+    margin: 10px auto;
+}
+
+.rounded-image {
+    border-radius: 50%;
+}
+
 /* Hero section styles */
-.hero-section {
-    background: url('/static/images/DALL·E\ 2024-07-21\ 15.08.07\ -\ A\ variety\ of\ elegantly\ decorated\ cakes\ and\ desserts\ arranged\ in\ a\ similar\ style\ to\ the\ provided\ image\,\ with\ more\ space\ at\ the\ top\,\ sides\,\ and\ bottom\,\ .webp') no-repeat center center;
+#hero-section {
+    background: url('/static/images/cuppa-cake-hero-image-collage.webp') no-repeat center center;
     background-size: cover;
     height: 700px;
     width: 100%;
@@ -17,6 +50,70 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+#hero-text-container {
+    background-color: rgba(128, 203, 196, 0.9);
+    border-radius: 20px;
+    max-width: 70vw;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+#hero-title {
+    font-size: 3rem;
+}
+
+#hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Shop now button styles */
+#shop-now-button {
+    background-color: #fc9bbd;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    display: inline-block;
+    max-width: 100%;
+    white-space: normal;
+}
+
+#shop-now-button:hover {
+    background-color: #e686a6;
+    color: white;
+}
+
+/* CTA Buttons Styles */
+#cta-buttons-row {
+    margin-bottom: 1.5rem;
+}
+
+#get-in-touch-button {
+    background-color: #fc9bbd;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin-right: 10px;
+}
+
+#get-in-touch-button:hover {
+    background-color: #e686a6;
+    color: white;
+}
+
+#our-bakes-button {
+    background-color: #80CBC4;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+#our-bakes-button:hover {
+    background-color: #6fb8b0;
+    color: white;
 }
 
 .text-container {
@@ -84,6 +181,14 @@ body {
     background-color: #212529;
 }
 
+/* Navigation link hover effect */
+.navbar-nav .nav-link:hover {
+    background-color: #fc9bbd !important;
+    color: black !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -123,7 +228,7 @@ body {
 .shop-now-button {
     background: #fc9bbd;
     color: black;
-    min-width: 260px;
+    min-width: 120px;
 }
 
 .btn-black {
@@ -335,7 +440,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #17a2b8;
 }
 
 /* Product Form */
@@ -377,18 +482,26 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 158px;
+    }
+
+    #hero-title {
+        font-size: 2.5rem;
+    }
+
+    #hero-subtitle {
+        font-size: 1.2rem;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 85px;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 85px);
     }
 
     .display-4.logo-font.text-black {
@@ -426,4 +539,129 @@ input[name='q']::placeholder {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+}
+
+/* Mailchimp form */
+@media (max-width: 768px) {
+    #mc_embed_signup {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    #mc_embed_signup .mc-field-group label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    #mc_embed_signup .mc-field-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #mc_embed_signup .clear {
+        text-align: center;
+    }
+
+    #mc_embed_signup .clear .button {
+        width: 100%;
+    }
+
+    #hero-title {
+        font-size: 2rem;
+    }
+
+    #hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    #shop-now-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) {
+    #mc_embed_signup {
+        width: 100%;
+    }
+
+    #mc_embed_signup .mc-field-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mc_embed_signup .mc-field-group label {
+        flex: 0 0 20%;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    #mc_embed_signup .mc-field-group input {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    #mc_embed_signup .clear {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #mc_embed_signup .clear .button {
+        flex: 0 0 auto;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero-title {
+        font-size: 1.75rem;
+    }
+
+    #hero-subtitle {
+        font-size: 1rem;
+    }
+
+    #shop-now-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    #get-in-touch-button,
+    #our-bakes-button {
+        width: 120px;
+        font-size: 0.875rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Footer buttons */
+.contact-button {
+    background-color: #fc9bbd;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: #e686a6;
+    color: white;
+}
+
+.footer-custom .col-lg-3, 
+.footer-custom .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
