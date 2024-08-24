@@ -1,3 +1,5 @@
+/* Base */
+
 html {
     height: 100%;
 }
@@ -188,7 +190,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -215,7 +216,6 @@ body {
 .custom-btn {
     background: white;
     color: black !important;
-    /* min-width: 260px; */
 }
 
 .custom-btn:hover,
@@ -310,6 +310,82 @@ input[name='q']::placeholder {
     height: auto;
     margin: auto;
     border-radius: 15px;
+}
+
+/* ------------------------------- Product Styling */
+
+/* Highlight Product Information */
+.product-container .card-body p {
+    color: #fc9bbd;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.product-container .card-body p:hover {
+    color: #80CBC4;
+}
+
+.product-container .card-footer p.lead {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Card Background and Borders */
+.product-container .card {
+    background: linear-gradient(135deg, #f9f9f9 0%, #f1f1f1 100%);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.product-container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #80CBC4;
+}
+
+/* Product Hover Effects */
+.product-container .card-img-top {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.product-container .card-img-top:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-container .card-footer .text-muted {
+    font-size: 0.9rem;
+    color: #80CBC4;
+    transition: color 0.3s ease;
+}
+
+.product-container .card-footer .text-muted:hover {
+    color: #fc9bbd;
+}
+
+/* Background & Overlays */
+.product-container .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 203, 196, 0.1);
+    z-index: 1;
+    transition: background 0.3s ease;
+    border-radius: 8px;
+}
+
+.product-container .card:hover::before {
+    background: rgba(252, 155, 189, 0.2);
+}
+
+.link-to-product {
+    z-index: 0;
 }
 
 /* ------------------------------- bootstrap toasts */
