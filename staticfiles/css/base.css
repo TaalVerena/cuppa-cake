@@ -658,6 +658,15 @@ h2 {
     min-height: 60vh;
 }
 
+/* -------------------------------- Allauth */
+
+#allauth-container {
+    min-height: 75vh;
+}
+
+#signup-form {
+    margin-bottom: 15px;
+}
 
 /* -------------------------------- Media Queries */
 
