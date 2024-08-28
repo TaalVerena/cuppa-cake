@@ -652,6 +652,13 @@ h2 {
     color: white;
 }
 
+/* -------------------------------- Shopping Bag */
+
+#bag-container {
+    min-height: 60vh;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
