@@ -299,7 +299,7 @@ The colour scheme for Cuppa Cake is designed to evoke a sense of delight and sop
 
 The primary colours used are **Seaside Mist** and **Sweet Blush**, creating a vibrant and inviting atmosphere.
 
-The combination of aqua and pink creates a visually pleasing contrast that is both modern and approachable. These colors work together to reflect the brand's identity—bringing together the freshness and reliability of aqua with the warmth and playfulness of pink. This color scheme is designed to appeal to a wide audience, conveying both professionalism and a sense of fun, making the online shopping experience enjoyable and engaging.
+The combination of aqua and pink creates a visually pleasing contrast that is both modern and approachable. These colours work together to reflect the brand's identity—bringing together the freshness and reliability of aqua with the warmth and playfulness of pink. This colour scheme is designed to appeal to a wide audience, conveying both professionalism and a sense of fun, making the online shopping experience enjoyable and engaging.
 
 #### Seaside Mist (Aqua):
 
@@ -317,7 +317,7 @@ Seaside Mist captures the refreshing and calming essence of a coastal breeze on 
 
 #### Sweet Blush (Pink):
 
-Sweet Blush embodies the soft, tender warmth of a light-hearted smile or the first bloom of a delicate flower. This pink hue exudes sweetness and affection, much like the delectable treats Cuppa Cake provides. It’s a color that invites customers to indulge in the playful and joyous spirit of the brand.
+Sweet Blush embodies the soft, tender warmth of a light-hearted smile or the first bloom of a delicate flower. This pink hue exudes sweetness and affection, much like the delectable treats Cuppa Cake provides. It’s a colour that invites customers to indulge in the playful and joyous spirit of the brand.
 
 #### Colour Palette
 | Swatch | Name | Hex | RGB |
