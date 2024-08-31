@@ -58,8 +58,15 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Adjust Quantity](#adjust-quantity)
       - [Checkout](#checkout)
         - [Checkout Page](#checkout-page)
+        - [Checkout Form](#checkout-form)
+          - [Fill Out Field Alert](#fill-out-field-alert)
+          - [Email Format Alert](#email-format-alert)
+          - [Country Alert \& Dropdown](#country-alert--dropdown)
         - [Payment](#payment)
-        - [Order Form](#order-form)
+          - [Card Number Alert](#card-number-alert)
+          - [Card Details Alert](#card-details-alert)
+        - [Complete Order](#complete-order)
+        - [Order Processing](#order-processing)
         - [Order Confirmation](#order-confirmation)
       - [Contact](#contact)
         - [Contact Page](#contact-page-1)
@@ -426,22 +433,55 @@ After adjusting the quantity, users receive a confirmation message and the produ
 ##### Checkout Page
 The checkout page displays a summary of the order, including product details, shipping information, and payment information. Users can review the order details, enter shipping information, and proceed to payment.
 
-![Checkout](README_files/images/checkout.png)
+![Checkout](README_files/images/checkout-page.png)
+
+##### Checkout Form
+Users are presented with a checkout form to enter their shipping information, including their name, address, and contact number, to complete the order.
+
+![Checkout Form](README_files/images/checkout-form.png)
+
+As users are entering their information, prompts are displayed to guide them through the process.
+
+###### Fill Out Field Alert
+![Fill Out Field Alert](README_files/images/fill-out-field-alert.png)
+
+###### Email Format Alert
+![Email Format Alert](README_files/images/email-format-alert.png)
+
+###### Country Alert & Dropdown
+![Country Dropdown Alert](README_files/images/country-dropdown-alert.png)
+
+![Country Dropdown](README_files/images/country-dropdown.png)
 
 ##### Payment
-Users can enter payment information, including credit card details, to complete the order. The payment form includes fields for credit card number, expiration date, and security code.
+Users are prompted to enter their payment details to complete the order. The payment form includes fields for the credit card number, expiration date, and security code.
 
-![Checkout Payment](README_files/images/checkout-payment.png)
+![Card Payment Section](README_files/images/card-payment-section.png)
 
-##### Order Form
-Users can enter shipping information, including name, address, and contact number, to complete the order. The order form includes fields for shipping address, city, state, and postal code.
+As users are entering their payment details, prompts are displayed to guide them through the process.
 
-![Checkout Information](README_files/images/checkout.png)
+###### Card Number Alert
+![Card Number Alert](README_files/images/card-number-alert.png)
+
+###### Card Details Alert
+![Card Details Alert](README_files/images/card-details-alert.png)
+
+##### Complete Order
+After completing the order form and payment details, the user is presented with the option to click the "Complete Order" button to confirm the order or the "Adjust Bag" button to return to the shopping bag.
+
+![Complete Order Button](README_files/images/complete-order-button.png)
+
+##### Order Processing
+After clicking the "Complete Order" button, while the order is being processed, users are presented with a loading animation to indicate that the order is being processed.
+
+![Order Processing](README_files/images/order-processing-desktop.png)
 
 ##### Order Confirmation
-After completing the order, users receive an order confirmation with the order details. The order confirmation page displays a summary of the order and users can view their orders from thier profile.
+After completing the order, users are presented with an order confirmation page that includes the order number, order details, and a message confirming that the order has been processed.
 
-![Order Confirmation](README_files/images/checkout-payment.png)
+![Order Confirmation Page](README_files/images/order-confirmation-page.png)
+
+![Order Processed Message](README_files/images/order-processed-message.png)
 
 #### Contact
 ##### Contact Page
