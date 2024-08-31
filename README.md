@@ -123,25 +123,25 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Mobile](#mobile-11)
     - [Shopping Bag Page](#shopping-bag-page-2)
       - [Desktop](#desktop-12)
-      - [MobileF](#mobilef)
+      - [Mobile](#mobile-12)
     - [Shopping Bag Update Window](#shopping-bag-update-window)
       - [Desktop](#desktop-13)
-      - [Mobile](#mobile-12)
+      - [Mobile](#mobile-13)
     - [Checkout Page](#checkout-page-1)
       - [Desktop](#desktop-14)
-      - [Mobile](#mobile-13)
+      - [Mobile](#mobile-14)
     - [Order Confirmation Page](#order-confirmation-page)
       - [Desktop](#desktop-15)
-      - [Mobile](#mobile-14)
+      - [Mobile](#mobile-15)
     - [Viewing Order History](#viewing-order-history)
       - [Desktop](#desktop-16)
-      - [Mobile](#mobile-15)
+      - [Mobile](#mobile-16)
     - [Viewing Order Details](#viewing-order-details)
       - [Desktop](#desktop-17)
-      - [Mobile](#mobile-16)
+      - [Mobile](#mobile-17)
     - [Newsletter Page](#newsletter-page)
       - [Desktop](#desktop-18)
-      - [Mobile](#mobile-17)
+      - [Mobile](#mobile-18)
   - [Web Marketing](#web-marketing)
     - [Advantages](#advantages)
     - [Target Audience](#target-audience)
@@ -151,6 +151,19 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Sitemap](#sitemap)
       - [sitemap.xml](#sitemapxml)
     - [robots.txt](#robotstxt)
+  - [Testing](#testing)
+    - [SEO Testing](#seo-testing)
+    - [Code Validation](#code-validation)
+    - [Manual Testing](#manual-testing)
+      - [Navigation Bar](#navigation-bar-1)
+      - [Home Page](#home-page)
+      - [Footer](#footer-2)
+    - [User Stories Testing](#user-stories-testing)
+    - [Bugs](#bugs)
+      - [Resolved Bugs](#resolved-bugs)
+      - [Known Bugs](#known-bugs)
+  - [Deployment](#deployment)
+    - [Heroku Deployment](#heroku-deployment)
   - [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Libraries \& Frameworks](#libraries--frameworks)
@@ -158,19 +171,8 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Databases](#databases)
     - [Hosting](#hosting)
     - [Version Control](#version-control)
-  - [Testing](#testing)
-    - [SEO Testing](#seo-testing)
-    - [Code Validation](#code-validation)
-    - [Manual Testing](#manual-testing)
-    - [User Stories Testing](#user-stories-testing)
-    - [Bugs](#bugs)
-      - [Resolved Bugs](#resolved-bugs)
-      - [Known Bugs](#known-bugs)
-  - [Deployment](#deployment)
-    - [Heroku Deployment](#heroku-deployment)
   - [Tools](#tools-1)
     - [IDE](#ide)
-    - [Code Validation](#code-validation-1)
     - [Responsiveness](#responsiveness)
     - [Other Tools](#other-tools)
   - [Credits](#credits)
@@ -713,7 +715,7 @@ The responsive design ensures that the site is accessible and user-friendly on a
 
 ![Shopping Bag Total Desktop](README_files/images/shopping-bag-total-desktop.png)
 
-#### MobileF
+#### Mobile
 ![Shopping Bag Total Mobile](README_files/images/shopping-bag-total-mobile.png)
 
 ![Shopping Bag Mobile](README_files/images/shopping-bag-mobile.png)
@@ -779,26 +781,35 @@ The responsive design ensures that the site is accessible and user-friendly on a
 ## Web Marketing
 Cuppa Cake stands as a B2C e-commerce platform that targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops. The platform offers a range of products for different occasions, including birthdays, weddings, and special events. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through a variety of products, place orders, and contact the business for enquiries.
 
+Utilizing a newsletter signup, social media icons, and content marketing, Cuppa Cake aims to engage customers, build brand loyalty, and drive traffic to the site. The platform is optimized for search engines, allowing customers to find the site easily and increase visibility online. Cuppa Cake offers a variety of products, easy navigation, secure payment methods, and customer support, providing customers with a seamless shopping experience.
+
 ### Advantages
 Cuppa Cake offers several advantages to customers, including:
-- Wide range of products: Cuppa Cake offers a variety of cakes, cake jars, cupcakes, and cake pops for different occasions.
-- Easy navigation: The site features a user-friendly design with easy navigation, allowing customers to browse through products and place orders.
-- Secure payment: Cuppa Cake uses secure payment methods to ensure that customer transactions are safe and protected.
-- Customer support: Cuppa Cake provides customer support through a contact form, allowing customers to send messages and enquiries to the business.
-- Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
-- Responsive design: The site is responsive and displays correctly on all devices, providing a seamless shopping experience for customers.
-- SEO: Cuppa Cake is optimized for search engines, allowing customers to find the site easily and increase visibility online.
-- Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
+- **Wide range of products:** Cuppa Cake offers a variety of cakes, cake jars, cupcakes, and cake pops for different occasions.
+
+- **Easy navigation:** The site features a user-friendly design with easy navigation, allowing customers to browse through products and place orders.
+
+- **Secure payment:** Cuppa Cake uses secure payment methods to ensure that customer transactions are safe and protected.
+
+- **Customer support:** Cuppa Cake provides customer support through a contact form, allowing customers to send messages and enquiries to the business.
+
+- **Newsletter:** Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
+
+- **Responsive design:** The site is responsive and displays correctly on all devices, providing a seamless shopping experience for customers.
+
+- **SEO:** Cuppa Cake is optimized for search engines, allowing customers to find the site easily and increase visibility online.
+
+- **Social media:** Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
 
 ### Target Audience
 Cuppa Cake targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops for different occasions. The platform is designed for customers who enjoy sweet treats and celebrating special occasions. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through products, place orders, and contact the business for enquiries.
 
 ### Marketing Strategy
-- Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
-- Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
-- Content marketing: Cuppa Cake plans to create a blog with articles about baking, recipes, and cake decorating to engage customers and provide valuable content.
-- Influencer marketing: Cuppa Cake aims to collaborate with influencers and bloggers to promote products and reach a wider audience.
-- Facebook business page: Cuppa Cake has created a Facebook business page to connect with customers, share updates, and promote products through social media.
+- **Newsletter:** Cuppa Cake offers a newsletter sig nup for customers to receive updates, promotions, and special offers.
+- **Social media:** Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
+- **Content marketing:** Cuppa Cake plans to create a blog with articles about baking, recipes, and cake decorating to engage customers and provide valuable content.
+- **Influencer marketing:** Cuppa Cake aims to collaborate with influencers and bloggers to promote products and reach a wider audience.
+- **Facebook business page:** Cuppa Cake has created a Facebook business page to connect with customers, share updates, and promote products through social media.
 
 ![Facebook Landing Page](README_files/images/facebook-landing-page.png)
 
@@ -816,45 +827,59 @@ Site map was generated using [XML Sitemaps](https://www.xml-sitemaps.com/) and t
 
 The robots.txt file was created and uploaded to the root directory of the site.
 
-## Technologies Used
-### Languages
-- HTML
-- CSS
-- JavaScript
-- Python
-
-### Libraries & Frameworks
-- Django
-- Bootstrap
-
-### Tools
-- Git
-- GitHub
-- Visual Studio Code
-
-### Databases
-- PostgreSQL
-
-### Hosting
-- Heroku
-
-### Version Control
-- Git
 
 ## Testing
 ### SEO Testing
-- The site was tested using the Lighthouse tool in Chrome DevTools. With an average score of 90 for all pages.
+- The site was tested using the Lighthouse tool in Chrome DevTools. This tool provides insights into the site's performance, accessibility, best practices, and SEO. The site received high scores in the necessary categories, indicating that the site is optimized for search engines and provides a good user experience.
 
 ### Code Validation
-- Html was validated using the W3C validator. minor issues were found and will be resolved in future updates.
-- CSS was validated using the W3C CSS validator. No issues were found.
-- Python was validated using the Code Institute Python Linter. Minor issues with length of lines were found and will be resolved in future updates.
-- JSHint was used to validate the JavaScript. No issues were found.
+- [W3C Validator](https://validator.w3.org/) - Html was validated using the W3C validator. Minor warnings were found in regards to attributes that are possibly unnecessary for JavaScript resources. These will be resolved in future updates and no errors were found.
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - CSS was validated using the W3C CSS validator. No issues were found.
+
+- [JSHint](https://jshint.com/) - JSHint was used to validate the JavaScript. No issues were found. The only warnings were related to the $ sign used in jQuery.
+
+- [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) - Python was validated using the Code Institute Python Linter. Minor issues with length of lines were found and will be resolved in future updates.
 
 ### Manual Testing
-| Test | Description | method | Expected Result | Actual Result | Pass/Fail |
+Manual testing was conducted to ensure that the site is user-friendly, functional, and responsive. The site was tested on different devices and browsers to ensure that it displays correctly and functions as expected. The following tests were conducted:
+
+#### Navigation Bar
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
 |------|-------------|--------|-----------------|---------------|-----------|
-| 1 | Navigation Bar | Click on each link in the navigation bar | The page should navigate to the corresponding section | The page navigated to the correct section | Pass |
+| 1 | Logo Navigation | Click on the logo | The user should be directed to the home page | The user was directed to the home page | Pass |
+| 2 | All Bakes | Click on the "All Bakes" link | The user should be directed to the product page | The user was directed to the product page | Pass |
+| 3 | Cakes | Click on the "Cakes" link | The user should be directed to the cakes page | The user was directed to the cakes page | Pass |
+| 4 | Cake Jars | Click on the "Cake Jars" link | The user should be directed to the cake jars page | The user was directed to the cake jars page | Pass |
+| 5 | Cupcakes | Click on the "Cupcakes" link | The user should be directed to the cupcakes page | The user was directed to the cupcakes page | Pass |
+| 6 | Cake Pops | Click on the "Cake Pops" link | The user should be directed to the cake pops page | The user was directed to the cake pops page | Pass |
+| 7 | FAQ | Click on the "FAQ" link | The user should be directed to the FAQ page | The user was directed to the FAQ page | Pass |
+| 8 | My Account | Click on the "My Account" link | The user should be presented with account options | The user was presented with account options | Pass |
+| 9 | Shopping Bag | Click on the "Shopping Bag" link | The user should be directed to the shopping bag page | The user was directed to the shopping bag page | Pass |
+| 10 | Search Button | Enter a search term and click the search icon | The user should be directed to the search results page | The user was directed to the search results page | Pass |
+| 11 | Search Enter Key | Enter a search term and press the enter key | The user should be directed to the search results page | The user was directed to the search results page | Pass |
+
+#### Home Page
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Hero Image | View the hero image | The user should see a large hero image | The user saw a large hero image | Pass |
+| 2 | Featured Categories | View the featured categories | The user should see featured categories | The user saw featured categories | Pass |
+| 3 | Call-to-Action Button | Click on the call-to-action button | The user should be directed to the product page | The user was directed to the product page | Pass |
+| 4 | About Section | View the about section | The user should see information about the business | The user saw information about the business | Pass |
+| 5 | Get in Touch Button | Click on the "Get in Touch" button | The user should be directed to the contact page | The user was directed to the contact page | Pass |
+| 6 | Our Bakes Button | Click on the "Our Bakes" button | The user should be directed to the product page | The user was directed to the product page | Pass |
+
+#### Footer
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Social Media Icons | Click on the social media icons | The user should be directed to the social media pages | The user was directed to the social media pages | Pass |
+| 2 | New Tab for Social Media | Click on the social media icons | The social media pages should open in a new tab | The social media pages opened in a new tab | Pass |
+| 3 | Contact Information | View the contact information | The user should see the contact information | The user saw the contact information | Pass |
+| 4 | Contact Us Button | Click on the "Contact Us" button | The user should be directed to the contact page | The user was directed to the contact page | Pass |
+| 5 | Newsletter Signup | Click on the "Subscribe" button | The user should be directed to the newsletter page | The user was directed to the newsletter page | Pass |
+
+
+
 | 2 | Registration | Register a new user account | The user should be able to register a new account | The user was able to register a new account | Pass |
 | 3 | Sign In | Sign in to the user account | The user should be able to Sign in to the account | The user was able to sign in to the account | Pass |
 | 4 | Sign Out | Sign out of the user account | The user should be able to Sign out of the account | The user was able to sign out of the account | Pass |
@@ -919,18 +944,35 @@ The robots.txt file was created and uploaded to the root directory of the site.
 14. Click the "Deploy Branch" button.
 15. Click the "View" button to launch the app.
 
+## Technologies Used
+### Languages
+- HTML
+- CSS
+- JavaScript
+- Python
+
+### Libraries & Frameworks
+- Django
+- Bootstrap
+
+### Tools
+- Git
+- GitHub
+- Visual Studio Code
+
+### Databases
+- PostgreSQL
+
+### Hosting
+- Heroku
+
+### Version Control
+- Git
+- 
 ## Tools
 ### IDE
 [Gitpod](https://www.gitpod.io/) - IDE application used to develop code in.
 
-### Code Validation
-- [W3C Validator](https://validator.w3.org/) - Validator that checks the markup validity for Web Documents in HTML.
-
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Validator that checks CSS validity.
-
-- [JSHint](https://jshint.com/) - JavaScript Validator.
-
-- [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) - Validator that checks syntax and stylistic problems in Python code.
 
 ### Responsiveness
 - [Am I Responsive](https://ui.dev/amiresponsive) - Generates responsive images for your website.
