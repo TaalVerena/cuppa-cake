@@ -18,6 +18,13 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [User Epics \& User Stories](#user-epics--user-stories)
   - [Design](#design)
     - [Wireframes](#wireframes)
+      - [Landing Page](#landing-page)
+      - [Product Page](#product-page)
+      - [Product Details Page](#product-details-page)
+      - [Shopping Cart Page](#shopping-cart-page)
+      - [Register Page](#register-page)
+      - [Log In Page](#log-in-page)
+      - [Contact Page](#contact-page)
     - [Database Schema](#database-schema)
     - [Typography](#typography)
     - [Color Scheme](#color-scheme)
@@ -26,7 +33,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Existing Features](#existing-features)
       - [General Navigation](#general-navigation)
         - [Navigation Bar](#navigation-bar)
-        - [Landing Page](#landing-page)
+        - [Landing Page](#landing-page-1)
         - [Header](#header)
         - [Footer](#footer)
           - [404 Page](#404-page)
@@ -38,7 +45,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Profile Page](#profile-page)
         - [Edit Profile](#edit-profile)
       - [Products](#products)
-        - [Product Page](#product-page)
+        - [Product Page](#product-page-1)
         - [Product Interaction](#product-interaction)
         - [Search Products](#search-products)
         - [Filter Products](#filter-products)
@@ -58,7 +65,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Order Form](#order-form)
         - [Order Confirmation](#order-confirmation)
       - [Contact](#contact)
-        - [Contact Page](#contact-page)
+        - [Contact Page](#contact-page-1)
         - [Contact Form](#contact-form)
       - [Newsletter](#newsletter)
         - [Newsletter Signup](#newsletter-signup)
@@ -154,11 +161,37 @@ Below are the epics and user stories developed for Cuppa Cake, each aimed at enh
 
 Wireframes were created using Figma to visualize the layout and design of the website. The wireframes provide a clear representation of the site's structure, navigation, and content, ensuring a consistent and user-friendly design.
 
+#### Landing Page
+
 ![Wireframe Landing Page](/README_files/images/wireframe-landing-page.png)
-![Wireframe Homepage](/README_files/images/wireframe-homepage.png)
+
+#### Product Page
+
+![Wireframe Products Page](/README_files/images/wireframe-products-page.png)
+
+#### Product Details Page
+
+![Wireframe Product Details Page](/README_files/images/wireframe-product-details-page.png)
+
+#### Shopping Cart Page
+
+![Wireframe Shopping Cart](/README_files/images/wireframe-shopping-cart.png)
+
+#### Register Page
+
+![Wireframe Register Page](/README_files/images/wireframe-register-page.png)
+
+#### Log In Page
+
+![Wireframe Log In Page](/README_files/images/wireframe-login-page.png)
+
+#### Contact Page
+
+![Wireframe Contact Page](/README_files/images/wireframe-contact-page.png)
 
 ### Database Schema
 The database schema was created using dbdiagram.io. The schema was created to show the relationships between the different models in the database.
+
 ![Database Schema](/README_files/images/database-schema.png)
 
 ### Typography
