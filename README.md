@@ -39,8 +39,10 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Edit Profile](#edit-profile)
       - [Products](#products)
         - [Product Page](#product-page)
+        - [Product Interaction](#product-interaction)
         - [Search Products](#search-products)
         - [Filter Products](#filter-products)
+        - [Sort Products](#sort-products)
         - [Product Details](#product-details)
         - [Add Product](#add-product)
         - [Edit Product](#edit-product)
@@ -222,9 +224,13 @@ Users can view and edit their profile information, including their contact numbe
 ![Profile](README_files/images/profile.png)
 
 ##### Edit Profile
-Users can edit their profile information, including their contact number and address. After editing their profile, users can save the changes and update their account information.
+Users can edit their profile information, including their contact number and address. 
 
-![Profile](README_files/images/profile.png)
+![Update Profile](README_files/images/update-profile.png)
+
+After editing their profile, users can save the changes and update their account information.
+
+![Update Profile Success](README_files/images/update-profile-success.png)
 
 #### Products
 ##### Product Page
@@ -232,35 +238,93 @@ The product page displays a list of products available for purchase. Users can v
 
 ![All Bakes](README_files/images/all-bakes.png)
 
+##### Product Interaction
+When users hover over a product, the curser changes to a pointer, a pink overlay appears, and the product zooms in slightly. This interaction provides visual feedback to users and encourages them to click on the product.
+
+![Product Interaction](README_files/images/product-interaction.png)
+
 ##### Search Products
-Users can search for products by entering keywords in the search bar. The search functionality allows users to find specific products quickly and easily.
+Users can search for products by entering keywords in the search bar.
 
 ![Search Bakes](README_files/images/search.png)
 
-##### Filter Products
-Users can filter products by category to narrow down their search results. The filter functionality allows users to browse products by category, price, and other criteria.
+The search functionality allows users to find specific products quickly and easily.
 
-![Filter Bakes](README_files/images/filter.png)
+![Search Phrase](README_files/images/search-phrase.png)
+
+![Search Results](README_files/images/search-results.png)
+
+##### Filter Products
+Users can filter products to narrow down their search results. The filter functionality allows users to browse products by price, rating or category.
+
+![Filter Bakes Options](README_files/images/filter.png)
+
+![Filter Bakes Results](README_files/images/filtered-results.png)
+
+##### Sort Products
+Users can sort products by price, rating, name or category. The sort functionality allows users to view products in ascending or descending order.
+
+![Sort Bakes Options](README_files/images/sorting.png)
 
 ##### Product Details
-Users can view detailed information about each product, including product name, description, price, and images. The product details page also includes customer ratings.
+Users can view detailed information about each product, including the product name, price, category, rating, description and image.
 
 ![Product Details](README_files/images/product-details.png)
 
-##### Add Product
-Admin users can add new products to the site by providing product information, including product name, description, price, and images. After adding a product, admin users can publish the product to the site.
+Users are able to add products to the shopping cart by clicking the "Add to Bag" button on the product details page.
 
-![Add Product](README_files/images/add-product.png)
+![Add to Bag](README_files/images/add-to-bag.png)
+
+##### Add Product
+Admin users can add new products to the site by providing product information, including the category, flavour, sku, name, description, price, and image.
+
+![Admin Add Product](README_files/images/admin-add-product.png)
+
+At the end of the add product form, admin users can choose to add the product to the site or cancel the action.
+
+![Admin Add Product or Cancel](README_files/images/admin-add-product-add-or-cancel.png)
+
+After adding a product, admin users are presented with a success message confirming that the product has been added to the site.
+
+![Admin Add Product Success](README_files/images/admin-add-product-success.png)
+
+Admin users are also presented with an overview of the product details, including the product name, price, category, description, and image.
+
+![Admin Add Product Overview](README_files/images/admin-add-product-overview.png)
 
 ##### Edit Product
-Admin users can edit existing products by updating product information, including product name, description, price, and images. After editing a product, admin users can save the changes and update the product details.
+Admin users can edit existing products by updating product information, including the product category, flavour, sku, name, description, price, and image.
 
-![Edit Product](README_files/images/edit-and-delete-product.png)
+![Edit or Delete Buttons](README_files/images/admin-edit-delete-buttons.png)
+
+After clicking the "Edit" button, admin users are presented with the product details form, where they can update the product information. 
+
+![Edit Product Page](README_files/images/admin-edit-page.png)
+
+![Edit Product Page](README_files/images/admin-edit-page-bottom.png)
+
+An alert is displayed to confirm that the product is being edited.
+
+![Edit Product Alert](README_files/images/admin-edit-alert.png)
+
+After editing a product, admin users are presented with a success message confirming that the product has been updated.
+
+![Edit Product Success](README_files/images/admin-edit-success.png)
+
+Admin users are also presented with an overview of the updated product details.
+
+![Edit Product Overview](README_files/images/admin-edit-overview.png)
 
 ##### Delete Product
-Admin users can delete products from the site by removing the product from the database. After deleting a product, admin users can confirm the deletion and remove the product from the site.
+Admin users can delete products from the site by navigating to the desired product's details page and clicking the "Delete" button.
 
-![Delete Product](README_files/images/edit-and-delete-product.png)
+![Delete Product Button](README_files/images/admin-edit-delete-buttons.png)
+
+![Product Details Page](README_files/images/admin-product-details-page.png)
+
+After clicking the "Delete" button, admin users are presented with a confirmation message to confirm the deletion of the product.
+
+![Delete Product Message](README_files/images/admin-delete-success.png)
 
 #### Bag
 ##### Bag Page
