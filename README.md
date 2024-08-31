@@ -28,7 +28,6 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Database Schema](#database-schema)
     - [Typography](#typography)
     - [Color Scheme](#color-scheme)
-    - [Icons](#icons)
   - [Features](#features)
     - [Existing Features](#existing-features)
       - [General Navigation](#general-navigation)
@@ -50,6 +49,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Search Products](#search-products)
         - [Filter Products](#filter-products)
         - [Sort Products](#sort-products)
+        - [Back to Top Button](#back-to-top-button)
         - [Product Details](#product-details)
       - [Bag](#bag)
         - [Bag Page](#bag-page)
@@ -100,8 +100,15 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
   - [Deployment](#deployment)
     - [Heroku Deployment](#heroku-deployment)
     - [Tools](#tools-1)
+      - [IDE](#ide)
+      - [Code Validation](#code-validation-1)
+      - [Responsiveness](#responsiveness)
+      - [Other Tools](#other-tools)
   - [Credits](#credits)
     - [Content](#content)
+    - [Media](#media)
+    - [Icons](#icons)
+    - [Frame / Guide](#frame--guide)
     - [Information Resources](#information-resources)
 
 ## User Experience
@@ -205,10 +212,6 @@ The primary font used for Cuppa Cake is 'Lato', a sans-serif typeface that offer
 
 The color scheme for Cuppa Cake is inspired by the colors of cakes and desserts. The primary colors used are aqua, grey, pink, and white, creating a warm and inviting atmosphere. The colors are used throughout the site to highlight important elements, create contrast, and enhance the overall design.
 
-### Icons
-
-- [Font Awesome](https://fontawesome.com/) - Used for all icons on the site.
-
 ## Features
 ### Existing Features
 #### General Navigation
@@ -301,6 +304,13 @@ Users can filter products to narrow down their search results. The filter functi
 Users can sort products by price, rating, name or category. The sort functionality allows users to view products in ascending or descending order.
 
 ![Sort Bakes Options](README_files/images/sorting.png)
+
+##### Back to Top Button
+A back to top button is displayed at the bottom right corner of the page. When users scroll down the page, the button appears, allowing users to quickly return to the top of the page.
+
+![Back to Top Option](README_files/images/back-to-top-option.png)
+
+![Back to Top Button](README_files/images/back-to-top-button.png)
 
 ##### Product Details
 Users can view detailed information about each product, including the product name, price, category, rating, description and image.
@@ -436,20 +446,20 @@ If a product does not have an image, a placeholder image is displayed on the pro
 This ensures that all products are displayed consistently and that admin users can easily identify products without images.
 
 ## Future Features
-* Product Reviews:
+- Product Reviews:
     - Allow users to leave reviews and ratings for products.
     - Display customer reviews and ratings on the product details page.
     - Allow users to edit and delete their reviews.
-* Minimum Order Quantity:
+- Minimum Order Quantity:
     - Set a minimum order quantity for products.
     - Display a message if the order quantity is below the minimum.
-* FAQ Page:
+- FAQ Page:
     - Create a FAQ page with common questions and answers.
     - Provide information about shipping, returns, and other policies.
-* Blog:
+- Blog:
     - Create a blog with articles about baking, recipes, and cake decorating.
     - Share tips, tutorials, and inspiration for baking enthusiasts.
-* Newsletter:
+- Newsletter:
     - Send regular newsletters with updates, promotions, and special offers.
     - Include product recommendations, recipes, and baking tips in the newsletter.
 
@@ -480,13 +490,13 @@ This ensures that all products are displayed consistently and that admin users c
 
 ## Testing
 ### SEO Testing
-* The site was tested using the Lighthouse tool in Chrome DevTools. With an average score of 90 for all pages.
+- The site was tested using the Lighthouse tool in Chrome DevTools. With an average score of 90 for all pages.
 
 ### Code Validation
-* Html was validated using the W3C validator. minor issues were found and will be resolved in future updates.
-* CSS was validated using the W3C CSS validator. No issues were found.
-* Python was validated using the Code Institute Python Linter. Minor issues with length of lines were found and will be resolved in future updates.
-* JSHint was used to validate the JavaScript. No issues were found.
+- Html was validated using the W3C validator. minor issues were found and will be resolved in future updates.
+- CSS was validated using the W3C CSS validator. No issues were found.
+- Python was validated using the Code Institute Python Linter. Minor issues with length of lines were found and will be resolved in future updates.
+- JSHint was used to validate the JavaScript. No issues were found.
 
 ### Manual Testing
 | Test | Description | method | Expected Result | Actual Result | Pass/Fail |
@@ -520,37 +530,37 @@ This ensures that all products are displayed consistently and that admin users c
 | 27 | Responsive design | View the site on different devices | The site should be responsive and display correctly on all devices | The site was responsive and displayed correctly on all devices | Pass |
 
 ### User Stories Testing
-* Throughout the development process, user stories were tested to ensure that the site meets user requirements and expectations. The user stories were organized into epics and prioritized based on user needs and feedback. The user stories were tested using manual testing and user feedback to ensure that the site is user-friendly and functional.
+- Throughout the development process, user stories were tested to ensure that the site meets user requirements and expectations. The user stories were organized into epics and prioritized based on user needs and feedback. The user stories were tested using manual testing and user feedback to ensure that the site is user-friendly and functional.
 
 ### Bugs
 #### Resolved Bugs
-* Decrement button on the bag page was not working correctly on larger screens. The issue was resolved by updating the decrement button functionality to adjust the quantity of products in the shopping bag.
+- Decrement button on the bag page was not working correctly on larger screens. The issue was resolved by updating the decrement button functionality to adjust the quantity of products in the shopping bag.
 #### Known Bugs
-* Images hosted on Cloudinary are using http instead of https, this is causing a mixed content error in the console. This is a known issue with Cloudinary and is being worked on by the Cloudinary team. The images are still being displayed correctly on the site.
+- Images hosted on Cloudinary are using http instead of https, this is causing a mixed content error in the console. This is a known issue with Cloudinary and is being worked on by the Cloudinary team. The images are still being displayed correctly on the site.
 
 ## Web Marketing
 Cuppa Cake stands as a B2C e-commerce platform that targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops. The platform offers a range of products for different occasions, including birthdays, weddings, and special events. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through a variety of products, place orders, and contact the business for enquiries.
 
 ### Advantages
 Cuppa Cake offers several advantages to customers, including:
-* Wide range of products: Cuppa Cake offers a variety of cakes, cake jars, cupcakes, and cake pops for different occasions.
-* Easy navigation: The site features a user-friendly design with easy navigation, allowing customers to browse through products and place orders.
-* Secure payment: Cuppa Cake uses secure payment methods to ensure that customer transactions are safe and protected.
-* Customer support: Cuppa Cake provides customer support through a contact form, allowing customers to send messages and enquiries to the business.
-* Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
-* Responsive design: The site is responsive and displays correctly on all devices, providing a seamless shopping experience for customers.
-* SEO: Cuppa Cake is optimized for search engines, allowing customers to find the site easily and increase visibility online.
-* Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
+- Wide range of products: Cuppa Cake offers a variety of cakes, cake jars, cupcakes, and cake pops for different occasions.
+- Easy navigation: The site features a user-friendly design with easy navigation, allowing customers to browse through products and place orders.
+- Secure payment: Cuppa Cake uses secure payment methods to ensure that customer transactions are safe and protected.
+- Customer support: Cuppa Cake provides customer support through a contact form, allowing customers to send messages and enquiries to the business.
+- Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
+- Responsive design: The site is responsive and displays correctly on all devices, providing a seamless shopping experience for customers.
+- SEO: Cuppa Cake is optimized for search engines, allowing customers to find the site easily and increase visibility online.
+- Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
 
 ### Target Audience
 Cuppa Cake targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops for different occasions. The platform is designed for customers who enjoy sweet treats and celebrating special occasions. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through products, place orders, and contact the business for enquiries.
 
 ### Marketing Strategy
-* Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
-* Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
-* Content marketing: Cuppa Cake plans to create a blog with articles about baking, recipes, and cake decorating to engage customers and provide valuable content.
-* Influencer marketing: Cuppa Cake aims to collaborate with influencers and bloggers to promote products and reach a wider audience.
-* Facebook business page: Cuppa Cake has created a Facebook business page to connect with customers, share updates, and promote products through social media.
+- Newsletter: Cuppa Cake offers a newsletter signup for customers to receive updates, promotions, and special offers.
+- Social media: Cuppa Cake uses social media icons in the footer to connect with customers and promote products through social channels.
+- Content marketing: Cuppa Cake plans to create a blog with articles about baking, recipes, and cake decorating to engage customers and provide valuable content.
+- Influencer marketing: Cuppa Cake aims to collaborate with influencers and bloggers to promote products and reach a wider audience.
+- Facebook business page: Cuppa Cake has created a Facebook business page to connect with customers, share updates, and promote products through social media.
 
 ![Facebook Landing Page](README_files/images/facebook-landing-page.png)
 
@@ -596,21 +606,38 @@ The robots.txt file was created and uploaded to the root directory of the site.
 15. Click the "View" button to launch the app.
 
 ### Tools
+#### IDE
+[Gitpod](https://www.gitpod.io/) - IDE application used to develop code in.
 
-- [Gitpod](https://www.gitpod.io/) - IDE application used to develop code in.
+#### Code Validation
 - [W3C Validator](https://validator.w3.org/) - Validator that checks the markup validity for Web Documents in HTML.
+
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Validator that checks CSS validity.
-- [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) - Validator that checks syntax and stylistic problems in Python code.
-- [Am I responsive](https://ui.dev/amiresponsive) - Generates Responsive images for your website.
-- [Chrome DevTools and Lighthouse](https://developer.chrome.com/docs/devtools/) - Web Developer Tools.
-- [DB Diagram](https://dbdiagram.io/home) - Database Schema Design Tool.
+
 - [JSHint](https://jshint.com/) - JavaScript Validator.
+
+- [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) - Validator that checks syntax and stylistic problems in Python code.
+
+#### Responsiveness
+- [Am I Responsive](https://ui.dev/amiresponsive) - Generates responsive images for your website.
+
+#### Other Tools
+- [Chrome DevTools and Lighthouse](https://developer.chrome.com/docs/devtools/) - Web Developer Tools.
+
+- [DB Diagram](https://dbdiagram.io/home) - Database Schema Design Tool.
 
 ## Credits
 ### Content
-* The content for the site was written by the developer.
-* The product images and favicon were generated using [ChatGPT](https://chatgpt.com/).
-* - The Code Institue Boutique Ado walkthrough project was utilized as a frame and guide for the development of this site.
+The content for the site was written by the developer.
+
+### Media
+The product images and favicon were generated using [ChatGPT](https://chatgpt.com/).
+
+### Icons
+[Font Awesome](https://fontawesome.com/) - Used for all icons on the site.
+
+### Frame / Guide
+The Code Institue Boutique Ado walkthrough project was utilized as a frame and guide for the development of this site.
 
 ### Information Resources
 - [W3Schools - Python](https://www.w3schools.com/python/)
