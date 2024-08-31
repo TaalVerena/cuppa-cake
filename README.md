@@ -165,6 +165,8 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [User Account](#user-account)
       - [Contact Page](#contact-page-3)
       - [Newsletter](#newsletter-1)
+      - [Shopping Bag](#shopping-bag-1)
+      - [Checkout](#checkout-1)
     - [User Stories Testing](#user-stories-testing)
     - [Bugs](#bugs)
       - [Resolved Bugs](#resolved-bugs)
@@ -990,30 +992,37 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 3 | Newsletter Form Prompts | Fill in the newsletter form | The user should see prompts for required fields | The user saw prompts for required fields | Pass |
 | 4 | Newsletter Form Submit | Submit the newsletter form | The user should see a success message | The user saw a success message | Pass |
 
+#### Shopping Bag
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Bag Button | Click on the "Shopping Bag" button | The user should be directed to the shopping bag page | The user was directed to the shopping bag page | Pass |
+| 2 | Add Products | Add products to the shopping bag | The user should be able to add products to the shopping bag | The user was able to add products to the shopping bag | Pass |
+| 2 | Add Products Message | Add products to the shopping bag | The user should see a message confirming that the product was added to the shopping bag | The user saw a message confirming that the product was added to the shopping bag | Pass |
+| 3 | Free Delivery Message | Add products to the shopping bag | The user should see a message advising how much more they need to spend for free delivery | The user saw a message advising how much more they need to spend for free delivery | Pass |
+| 4 | View Shopping Bag | Click on the shopping bag icon | The user should be directed to the shopping bag page | The user was directed to the shopping bag page | Pass |
+| 5 | Delivery Fee | View the shopping bag | The user should see the delivery fee | The user saw the delivery fee | Pass |
+| 6 | Total Price | View the shopping bag | The user should see the total price | The user saw the total price | Pass |
+| 7 | Free Delivery | Add products to the shopping bag | The user should see a message advising that they qualify for free delivery | The user saw a message advising that they qualify for free delivery | Pass |
+| 8 | Remove Product | Click the "Remove" button | The product should be removed from the shopping bag | The product was removed from the shopping bag | Pass |
+| 9 | Remove Product Message | Click the "Remove" button | The user should see a message confirming that the product was removed from the shopping bag | The user saw a message confirming that the product was removed from the shopping bag | Pass | 
+| 10 | Adjust Quantity | Click the increment or decrement button | The quantity should adjust accordingly | The quantity adjusted accordingly | Pass |
+| 11 | Adjust Quantity Button | Click the "Update" button | The quantity should update | The quantity updated | Pass |
+| 12 | Adjust Quantity Message | Click the "Update" button | The user should see a message confirming that the quantity was updated | The user saw a message confirming that the quantity was updated | Pass |
+| 13 | Decrease Quantity Below 1 | Click the decrement button | The quantity should not go below 1 | The quantity did not go below 1 | Pass |
 
+#### Checkout
+| 1 | Proceed to Checkout | Click the "Secure Checkout" button | The user should be directed to the checkout page | The user was directed to the checkout page | Pass |
+| 2 | Delivery Information | Fill in the delivery information | The user should be able to fill in the delivery information | The user was able to fill in the delivery information | Pass |
+| 3 | Delivery Information Prompts | Fill in the delivery information | The user should see prompts for required fields | The user saw prompts for required fields | Pass |
+| 4 | Payment Information | Fill in the payment information | The user should be able to fill in the payment information | The user was able to fill in the payment information | Pass |
+| 5 | Payment Information Prompts | Fill in the payment information | The user should see prompts for required fields | The user saw prompts for required fields | Pass |
+| 6 | Order Processing | Click the "Complete Order" button | The user should see an ordering processing animation | The user saw an ordering processing animation | Pass |
+| 7 | Order Confirmation Message | Order processing complete | The user should see an order confirmation message | The user saw an order confirmation message | Pass |
+| 8 | Order Confirmation Page | Order processing complete | The user should be directed to the order confirmation page | The user was directed to the order confirmation page | Pass |
+| 9 | Browse Products | Click the call-to-action button | The user should be directed to the product page | The user was directed to the product page | Pass |
+| 10 | View Orders | Navigate to the profile page | The user should see their order history | The user saw their order history | Pass |
+| 11 | Admin Order Update | Navigate to the admin portal | The admin user should see the order and be able to update the order | The admin user saw the order and was able to update the order | Pass |
 
-
-| 7 | Bag | Add products to the shopping bag | The user should be able to add products to the shopping bag | The user was able to add products to the shopping bag | Pass |
-| 8 | Bag | Remove products from the shopping bag | The user should be able to remove products from the shopping bag | The user was able to remove products from the shopping bag | Pass |
-| 9 | Bag | Adjust product quantity in the shopping bag | The user should be able to adjust product quantity in the shopping bag | The user was able to adjust product quantity in the shopping bag | Pass |
-| 10 | Checkout | Proceed to checkout | The user should be able to proceed to checkout | The user was able to proceed to checkout | Pass |
-| 11 | Checkout | Enter shipping information | The user should be able to enter shipping information | The user was able to enter shipping information | Pass |
-| 12 | Checkout | Enter payment information | The user should be able to enter payment information | The user was able to enter payment information | Pass |
-| 13 | Checkout | Order confirmation | The user should receive an order confirmation message | The user received an order confirmation message | Pass |
-| 14 | Contact | Send message to the business | The user should be able to send a message to the business | The user was able to send a message to the business | Pass |
-| 15 | Newsletter | Sign up for the newsletter | The user should be able to sign up for the newsletter | The user was able to sign up for the newsletter | Pass |
-| 16 | View orders | View order history | The user should be able to view order history | The user was able to view order history | Pass |
-| 17 | Update delivery address | Update delivery address | The user should be able to update delivery address | The user was able to update delivery address | Pass |
-| 18 | Search products | Search for products | The user should be able to search for products | The user was able to search for products | Pass |
-| 19 | Filter products | Filter products by category | The user should be able to filter products by category | The user was able to filter products by category | Pass |
-| 20 | Filter products | Filter products by price | The user should be able to filter products by price | The user was able to filter products by price | Pass |
-| 21 | Filter products | Filter products by rating | The user should be able to filter products by rating | The user was able to filter products by rating | Pass |
-| 22 | Sub categories | View sub categories | The user should be able to view sub categories | The user was able to view sub categories | Pass |
-| 23 | Admin | Add products | The admin user should be able to add products | The admin user was able to add products | Pass |
-| 24 | Admin | Edit products | The admin user should be able to edit products | The admin user was able to edit products | Pass |
-| 25 | Admin | Delete products | The admin user should be able to delete products | The admin user was able to delete products | Pass |
-| 26 | 404 page | Navigate to a non-existent page | The user should see a 404 page | The user saw a 404 page | Pass |
-| 27 | Responsive design | View the site on different devices | The site should be responsive and display correctly on all devices | The site was responsive and displayed correctly on all devices | Pass |
 
 ### User Stories Testing
 - Throughout the development process, user stories were tested to ensure that the site meets user requirements and expectations. The user stories were organized into epics and prioritized based on user needs and feedback. The user stories were tested using manual testing and user feedback to ensure that the site is user-friendly and functional.
