@@ -26,13 +26,13 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Sign In Page](#sign-in-page)
       - [Contact Page](#contact-page)
     - [Database Schema](#database-schema)
-    - [Typography](#typography)
     - [Colour Scheme](#colour-scheme)
       - [Seaside Mist (Aqua):](#seaside-mist-aqua)
         - [Usage:](#usage)
       - [Sweet Blush (Pink):](#sweet-blush-pink)
       - [Colour Palette](#colour-palette)
         - [Usage:](#usage-1)
+    - [Typography](#typography)
   - [Features](#features)
     - [Existing Features](#existing-features)
       - [General Navigation](#general-navigation)
@@ -205,6 +205,8 @@ During the planning stage, several key epics were identified to structure the de
 
 Each user story addresses the needs and expectations of our users and is organized within the project's kanban board, offering a detailed view of the development progress and priorities.
 
+The kanban board can be viewed [here](https://github.com/users/TaalVerena/projects/4/views/1).
+
 Below are the epics and user stories developed for Cuppa Cake, each aimed at enhancing the user experience and functionality of the platform:
 1. User Registration & Authentication
     - User Registration
@@ -289,10 +291,6 @@ The database schema was created using dbdiagram.io. The schema was created to sh
 
 ![Database Schema](/README_files/images/database-schema.png)
 
-### Typography
-
-The primary font used for Cuppa Cake is 'Lato', a sans-serif typeface that offers a clean and modern look. The font is used throughout the site for headings, paragraphs, and buttons, ensuring a consistent and professional design.
-
 ### Colour Scheme
 
 The colour scheme for Cuppa Cake is designed to evoke a sense of delight and sophistication, perfectly matching the brand's ethos. The primary colours, which we've creatively named Seaside Mist and Sweet Blush, create a vibrant and harmonious visual experience.
@@ -328,6 +326,10 @@ Sweet Blush embodies the soft, tender warmth of a light-hearted smile or the fir
 - Buttons: The "Let's Get Baking" button on the landing page, "Contact Us" and "Subscribe" buttons in the footer, as well as the select buttons throughout the site, making these key interactive elements stand out with a warm, inviting appeal.
 - Headings & Highlighted Text: Used in prominent headings, product names, FAQ and profile page, drawing attention and create a welcoming, friendly atmosphere.
 - Links & Accents: Accentuating important elements, providing a playful contrast against the more serene background.
+
+### Typography
+
+The primary font used for Cuppa Cake is 'Lato', a sans-serif typeface that offers a clean and modern look. The font is used throughout the site for headings, paragraphs, and buttons, ensuring a consistent and professional design.
 
 ## Features
 ### Existing Features
@@ -741,10 +743,10 @@ The responsive design ensures that the site is accessible and user-friendly on a
 
 ### Sign Out Page
 #### Desktop
-![Sign Out Desktop](README_files/images/signout-desktop.png)
+![Sign Out Desktop](README_files/images/sign-out-desktop.png)
 
 #### Mobile
-![Sign Out Mobile](README_files/images/signout-mobile.png)
+![Sign Out Mobile](README_files/images/sign-out-mobile.png)
 
 ### Profile Page
 #### Desktop
@@ -1048,6 +1050,8 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 13 | Decrease Quantity Below 1 | Click the decrement button | The quantity should not go below 1 | The quantity did not go below 1 | Pass |
 
 #### Checkout
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
 | 1 | Proceed to Checkout | Click the "Secure Checkout" button | The user should be directed to the checkout page | The user was directed to the checkout page | Pass |
 | 2 | Delivery Information | Fill in the delivery information | The user should be able to fill in the delivery information | The user was able to fill in the delivery information | Pass |
 | 3 | Delivery Information Prompts | Fill in the delivery information | The user should see prompts for required fields | The user saw prompts for required fields | Pass |
@@ -1072,6 +1076,8 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 
 ### User Stories Testing
 - Throughout the development process, user stories were tested to ensure that the site meets user requirements and expectations. The user stories were organized into epics and prioritized based on user needs and feedback. The user stories were tested using manual testing and user feedback to ensure that the site is user-friendly and functional.
+
+The kanban board can be viewed [here](https://github.com/users/TaalVerena/projects/4/views/1).
 
 ### Bugs
 #### Resolved Bugs
@@ -1131,7 +1137,7 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 
 ### Version Control
 - Git
-- 
+
 ## Tools
 ### IDE
 [Gitpod](https://www.gitpod.io/) - IDE application used to develop code in.
