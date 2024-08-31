@@ -51,9 +51,6 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Filter Products](#filter-products)
         - [Sort Products](#sort-products)
         - [Product Details](#product-details)
-        - [Add Product](#add-product)
-        - [Edit Product](#edit-product)
-        - [Delete Product](#delete-product)
       - [Bag](#bag)
         - [Bag Page](#bag-page)
         - [Add to Bag](#add-to-bag)
@@ -69,6 +66,12 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Contact Form](#contact-form)
       - [Newsletter](#newsletter)
         - [Newsletter Signup](#newsletter-signup)
+    - [Existing Admin Features](#existing-admin-features)
+      - [Product Management](#product-management)
+        - [Add Product](#add-product)
+        - [Edit Product](#edit-product)
+        - [Delete Product](#delete-product)
+      - [Placeholder Image](#placeholder-image)
   - [Future Features](#future-features)
   - [Technologies Used](#technologies-used)
     - [Languages](#languages)
@@ -308,57 +311,6 @@ Users are able to add products to the shopping cart by clicking the "Add to Bag"
 
 ![Add to Bag](README_files/images/add-to-bag.png)
 
-##### Add Product
-Admin users can add new products to the site by providing product information, including the category, flavour, sku, name, description, price, and image.
-
-![Admin Add Product](README_files/images/admin-add-product.png)
-
-At the end of the add product form, admin users can choose to add the product to the site or cancel the action.
-
-![Admin Add Product or Cancel](README_files/images/admin-add-product-add-or-cancel.png)
-
-After adding a product, admin users are presented with a success message confirming that the product has been added to the site.
-
-![Admin Add Product Success](README_files/images/admin-add-product-success.png)
-
-Admin users are also presented with an overview of the product details, including the product name, price, category, description, and image.
-
-![Admin Add Product Overview](README_files/images/admin-add-product-overview.png)
-
-##### Edit Product
-Admin users can edit existing products by updating product information, including the product category, flavour, sku, name, description, price, and image.
-
-![Edit or Delete Buttons](README_files/images/admin-edit-delete-buttons.png)
-
-After clicking the "Edit" button, admin users are presented with the product details form, where they can update the product information. 
-
-![Edit Product Page](README_files/images/admin-edit-page.png)
-
-![Edit Product Page](README_files/images/admin-edit-page-bottom.png)
-
-An alert is displayed to confirm that the product is being edited.
-
-![Edit Product Alert](README_files/images/admin-edit-alert.png)
-
-After editing a product, admin users are presented with a success message confirming that the product has been updated.
-
-![Edit Product Success](README_files/images/admin-edit-success.png)
-
-Admin users are also presented with an overview of the updated product details.
-
-![Edit Product Overview](README_files/images/admin-edit-overview.png)
-
-##### Delete Product
-Admin users can delete products from the site by navigating to the desired product's details page and clicking the "Delete" button.
-
-![Delete Product Button](README_files/images/admin-edit-delete-buttons.png)
-
-![Product Details Page](README_files/images/admin-product-details-page.png)
-
-After clicking the "Delete" button, admin users are presented with a confirmation message to confirm the deletion of the product.
-
-![Delete Product Message](README_files/images/admin-delete-success.png)
-
 #### Bag
 ##### Bag Page
 The bag page displays a list of products added to the shopping bag. Users can view product details, adjust product quantities, and remove products from the bag.
@@ -417,6 +369,71 @@ Users can send messages to the business by entering their name, email address, a
 Users can sign up for the newsletter by providing their email address. After signing up, users receive email updates about new products, promotions, and special offers.
 
 ![Newsletter](README_files/images/newsletter.png)
+
+### Existing Admin Features
+
+#### Product Management
+Cuppa Cake includes admin features that allow admin users to manage products through a user-friendly interface. Admin users have full CRUD (Create, Read, Update, Delete) functionality for products, including adding, editing, and deleting products.
+
+Admin users are provided with a user-friendly form for adding new products and updating existing products. This allows admin users to manage products efficiently and ensure that the site is up-to-date with the latest products, maintaining a high level of customer satisfaction.
+
+##### Add Product
+Admin users can add new products to the site by providing product information, including the category, flavour, sku, name, description, price, and image.
+
+![Admin Add Product](README_files/images/admin-add-product.png)
+
+At the end of the add product form, admin users can choose to add the product to the site or cancel the action.
+
+![Admin Add Product or Cancel](README_files/images/admin-add-product-add-or-cancel.png)
+
+After adding a product, admin users are presented with a success message confirming that the product has been added to the site.
+
+![Admin Add Product Success](README_files/images/admin-add-product-success.png)
+
+Admin users are also presented with an overview of the product details, including the product name, price, category, description, and image.
+
+![Admin Add Product Overview](README_files/images/admin-add-product-overview.png)
+
+##### Edit Product
+Admin users can edit existing products by updating product information, including the product category, flavour, sku, name, description, price, and image.
+
+![Edit or Delete Buttons](README_files/images/admin-edit-delete-buttons.png)
+
+After clicking the "Edit" button, admin users are presented with the product details form, where they can update the product information. 
+
+![Edit Product Page](README_files/images/admin-edit-page.png)
+
+![Edit Product Page](README_files/images/admin-edit-page-bottom.png)
+
+An alert is displayed to confirm that the product is being edited.
+
+![Edit Product Alert](README_files/images/admin-edit-alert.png)
+
+After editing a product, admin users are presented with a success message confirming that the product has been updated.
+
+![Edit Product Success](README_files/images/admin-edit-success.png)
+
+Admin users are also presented with an overview of the updated product details.
+
+![Edit Product Overview](README_files/images/admin-edit-overview.png)
+
+##### Delete Product
+Admin users can delete products from the site by navigating to the desired product's details page and clicking the "Delete" button.
+
+![Delete Product Button](README_files/images/admin-edit-delete-buttons.png)
+
+![Product Details Page](README_files/images/admin-product-details-page.png)
+
+After clicking the "Delete" button, admin users are presented with a confirmation message to confirm the deletion of the product.
+
+![Delete Product Message](README_files/images/admin-delete-success.png)
+
+#### Placeholder Image
+If a product does not have an image, a placeholder image is displayed on the product details page.
+
+![Placeholder Image](README_files/images/placeholder-image.png)
+
+This ensures that all products are displayed consistently and that admin users can easily identify products without images.
 
 ## Future Features
 * Product Reviews:
