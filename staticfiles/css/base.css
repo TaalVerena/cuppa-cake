@@ -153,9 +153,6 @@ body {
 
 .footer-custom .col-lg-3, .footer-custom .col-md-6 {
     flex: 0 0 auto;
-    width: auto;
-    margin-right: 75px;
-    margin-left: 75px;
 }
 
 .footer-custom .text-center {
@@ -662,10 +659,6 @@ h2 {
 
 #allauth-container {
     min-height: 75vh;
-}
-
-#signup-form {
-    margin-bottom: 15px;
 }
 
 /* -------------------------------- Media Queries */
