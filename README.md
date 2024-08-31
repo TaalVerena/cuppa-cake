@@ -158,6 +158,8 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Navigation Bar](#navigation-bar-1)
       - [Home Page](#home-page)
       - [Footer](#footer-2)
+      - [Product Page](#product-page-3)
+      - [Product Details Page](#product-details-page-2)
     - [User Stories Testing](#user-stories-testing)
     - [Bugs](#bugs)
       - [Resolved Bugs](#resolved-bugs)
@@ -878,7 +880,38 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 4 | Contact Us Button | Click on the "Contact Us" button | The user should be directed to the contact page | The user was directed to the contact page | Pass |
 | 5 | Newsletter Signup | Click on the "Subscribe" button | The user should be directed to the newsletter page | The user was directed to the newsletter page | Pass |
 
+#### Product Page
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Product List | View the list of products | The user should see a list of products | The user saw a list of products | Pass |
+| 2 | Product Interaction | Hover over a product | The user should see the product zoom in slightly and a pink overlay | The user saw the product zoom in and a pink overlay | Pass |
+| 3 | Search Products | Enter a search term | The user should see search results | The user saw search results | Pass |
+| 4 | Filter Products By Price | Select the "By Price" filter | The user should see products filtered by price | The user saw products filtered by price | Pass |
+| 5 | Filter Products By Rating | Select the "By Rating" filter | The user should see products filtered by rating | The user saw products filtered by rating | Pass |
+| 6 | Filter Products By Category | Select the "By Category" filter | The user should see products filtered by category | The user saw products filtered by category | Pass |
+| 7 | Sort Products By Price (Low to High) | Select the "Price (Low to High)" sort option | The user should see products sorted by price in ascending order | The user saw products sorted by price in ascending order | Pass |
+| 8 | Sort Products By Price (High to Low) | Select the "Price (High to Low)" sort option | The user should see products sorted by price in descending order | The user saw products sorted by price in descending order | Pass |
+| 9 | Sort Products By Rating (Low to High) | Select the "Rating (Low to High)" sort option | The user should see products sorted by rating in ascending order | The user saw products sorted by rating in ascending order | Pass |
+| 10 | Sort Products By Rating (High to Low) | Select the "Rating (High to Low)" sort option | The user should see products sorted by rating in descending order | The user saw products sorted by rating in descending order | Pass |
+| 11 | Sort Products By Name (A to Z) | Select the "Name (A to Z)" sort option | The user should see products sorted by name in ascending order | The user saw products sorted by name in ascending order | Pass |
+| 12 | Sort Products By Name (Z to A) | Select the "Name (Z to A)" sort option | The user should see products sorted by name in descending order | The user saw products sorted by name in descending order | Pass |
+| 12 | Sort Products By Category (A to Z) | Select the "Category (A to Z)" sort option | The user should see products sorted by category in ascending order | The user saw products sorted by category in ascending order | Pass |
+| 13 | Sort Products By Category (Z to A) | Select the "Category (Z to A)" sort option | The user should see products sorted by category in descending order | The user saw products sorted by category in descending order | Pass |
 
+#### Product Details Page
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Product Details | Click on a product | The user should see detailed information about the product | The user saw detailed information about the product | Pass |
+| 2 | Add to Bag | Click the "Add to Bag" button | The product should be added to the shopping bag | The product was added to the shopping bag | Pass |
+| 3 | Bag Update Message | Click the "Add to Bag" button | The user should see a message confirming that the product was added to the shopping bag | The user saw a message confirming that the product was added to the shopping bag | Pass |
+| 4 | Placeholder Image | View a product without an image | The user should see a placeholder image | The user saw a placeholder image | Pass |
+| 5 | Quantity Below 1 | Enter a quantity below 1 | The user should see an alert message | The user saw an alert message | Pass |
+| 6 | Decrement Below 1 | Click the decrement button below 1 | The quantity should not go below 1 | The quantity did not go below 1 | Pass |
+| 7 | Increment Button | Click the increment button | The quantity should increase by 1 | The quantity increased by 1 | Pass |
+| 8 | Decrease Button | Click the decrement button | The quantity should decrease by 1 | The quantity decreased by 1 | Pass |
+| 9 | Manual Quantity Entry | Enter a quantity manually | The quantity should update to the entered value | The quantity updated to the entered value | Pass |
+| 10 | Admin User | View the edit and delete buttons | The admin user should see the edit and delete buttons | The admin user saw the edit and delete buttons | Pass |
+| 11 | Guest User | View the product details | The guest user should not see the edit and delete buttons | The guest user did not see the edit and delete buttons | Pass |
 
 | 2 | Registration | Register a new user account | The user should be able to register a new account | The user was able to register a new account | Pass |
 | 3 | Sign In | Sign in to the user account | The user should be able to Sign in to the account | The user was able to sign in to the account | Pass |
