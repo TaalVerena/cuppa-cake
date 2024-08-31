@@ -552,6 +552,8 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Mobile
 ![Header Mobile](README_files/images/header-mobile.png)
 
+![Header Dropdown Mobile](README_files/images/header-dropdown-mobile.png)
+
 ### About Section
 #### Desktop
 ![About Section Desktop](README_files/images/about-desktop.png)
@@ -560,6 +562,8 @@ The responsive design ensures that the site is accessible and user-friendly on a
 
 #### Mobile
 ![About Section Mobile](README_files/images/about-mobile.png)
+
+![About Section Mobile Buttons](README_files/images/about-buttons-mobile.png)
 
 ### Footer
 #### Desktop
@@ -606,6 +610,8 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Mobile
 ![Contact Mobile](README_files/images/contact-mobile.png)
 
+![Contact Buttons Mobile](README_files/images/contact-buttons-mobile.png)
+
 ### Register Page
 #### Desktop
 ![Register Desktop](README_files/images/register-desktop.png)
@@ -634,6 +640,8 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Mobile
 ![Profile Mobile](README_files/images/profile-mobile.png)
 
+![Profile Order History Mobile](README_files/images/order-history-mobile.png)
+
 ### Shopping Cart Page
 #### Desktop
 ![Shopping Cart Desktop](README_files/images/shopping-cart-desktop.png)
@@ -641,9 +649,9 @@ The responsive design ensures that the site is accessible and user-friendly on a
 ![Shopping Cart Total Desktop](README_files/images/shopping-cart-total-desktop.png)
 
 #### Mobile
-![Shopping Cart Mobile](README_files/images/shopping-cart-mobile.png)
-
 ![Shopping Cart Total Mobile](README_files/images/shopping-cart-total-mobile.png)
+
+![Shopping Cart Mobile](README_files/images/shopping-cart-mobile.png)
 
 ### Shopping Cart Update Window
 #### Desktop
@@ -670,12 +678,16 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Mobile
 ![Order Confirmation Mobile](README_files/images/order-confirmation-mobile.png)
 
+![Order Confirmation Mobile](README_files/images/order-confirmation-buttons-mobile.png)
+
 ### Viewing Order History
 #### Desktop
 ![Order History Desktop](README_files/images/order-history-desktop.png)
 
 #### Mobile
-![Order History Mobile](README_files/images/order-history-mobile.png)
+![Profile Order History Mobile Top](README_files/images/profile-order-history-mobile-top.png)
+
+![Profile Order History Mobile Bottom](README_files/images/profile-order-history-mobile-bottom.png)
 
 ### Viewing Order Details
 #### Desktop
@@ -683,6 +695,10 @@ The responsive design ensures that the site is accessible and user-friendly on a
 
 #### Mobile
 ![Order Details Mobile](README_files/images/order-details-mobile.png)
+
+![Order Details Button Mobile](README_files/images/order-details-button-mobile.png)
+
+![Order Details Alert Mobile](README_files/images/order-details-alert-mobile.png)
 
 ### Newsletter Page
 #### Desktop
@@ -692,6 +708,8 @@ The responsive design ensures that the site is accessible and user-friendly on a
 
 #### Mobile
 ![Newsletter Mobile](README_files/images/newsletter-mobile.png)
+
+![Newsletter Confirmation Mobile](README_files/images/newsletter-confirmation-mobile.png)
 
 ## Web Marketing
 Cuppa Cake stands as a B2C e-commerce platform that targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops. The platform offers a range of products for different occasions, including birthdays, weddings, and special events. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through a variety of products, place orders, and contact the business for enquiries.
