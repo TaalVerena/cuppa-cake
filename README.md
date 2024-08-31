@@ -116,25 +116,25 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Mobile](#mobile-11)
     - [Shopping Bag Page](#shopping-bag-page-2)
       - [Desktop](#desktop-12)
-      - [Mobile](#mobile-12)
+      - [MobileF](#mobilef)
     - [Shopping Bag Update Window](#shopping-bag-update-window)
       - [Desktop](#desktop-13)
-      - [Mobile](#mobile-13)
+      - [Mobile](#mobile-12)
     - [Checkout Page](#checkout-page-1)
       - [Desktop](#desktop-14)
-      - [Mobile](#mobile-14)
+      - [Mobile](#mobile-13)
     - [Order Confirmation Page](#order-confirmation-page)
       - [Desktop](#desktop-15)
-      - [Mobile](#mobile-15)
+      - [Mobile](#mobile-14)
     - [Viewing Order History](#viewing-order-history)
       - [Desktop](#desktop-16)
-      - [Mobile](#mobile-16)
+      - [Mobile](#mobile-15)
     - [Viewing Order Details](#viewing-order-details)
       - [Desktop](#desktop-17)
-      - [Mobile](#mobile-17)
+      - [Mobile](#mobile-16)
     - [Newsletter Page](#newsletter-page)
       - [Desktop](#desktop-18)
-      - [Mobile](#mobile-18)
+      - [Mobile](#mobile-17)
   - [Web Marketing](#web-marketing)
     - [Advantages](#advantages)
     - [Target Audience](#target-audience)
@@ -405,14 +405,22 @@ After adding a product to the bag, users receive a confirmation message and can 
 ![Shopping Bag](README_files/images/shopping-bag.png)
 
 ##### Remove from Bag
-Users can remove products from the shopping bag by clicking the "Remove" button next to the product. After removing a product from the bag, users can update the shopping bag.
+Users can remove products from the shopping bag by clicking the "Remove" button next to the product.
 
 ![Remove from Bag Button](README_files/images/remove-from-bag-button.png)
 
-##### Adjust Quantity
-Users can adjust the quantity of products in the shopping bag by entering the desired quantity in the quantity field. After adjusting the quantity, users can update the shopping bag.
+After removing a product from the bag, users receive a confirmation message and the product is removed from the shopping bag.
 
-![Adjust Quantity](README_files/images/shopping-bag.png)
+![Remove from Bag Message](README_files/images/remove-from-bag-message.png)
+
+##### Adjust Quantity
+Users can adjust the quantity of products in the shopping bag by entering the desired quantity in the quantity field or using the increment and decrement buttons, and then clicking the "Update" button.
+
+![Adjust Quantity](README_files/images/adjust-quantity.png)
+
+After adjusting the quantity, users receive a confirmation message and the product quantity is updated in the shopping bag.
+
+![Adjust Quantity Message](README_files/images/adjust-quantity-message.png)
 
 #### Checkout
 ##### Checkout Page
