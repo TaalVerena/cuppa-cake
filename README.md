@@ -167,6 +167,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Newsletter](#newsletter-1)
       - [Shopping Bag](#shopping-bag-1)
       - [Checkout](#checkout-1)
+      - [FAQ](#faq)
     - [User Stories Testing](#user-stories-testing)
     - [Bugs](#bugs)
       - [Resolved Bugs](#resolved-bugs)
@@ -1023,6 +1024,14 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 10 | View Orders | Navigate to the profile page | The user should see their order history | The user saw their order history | Pass |
 | 11 | Admin Order Update | Navigate to the admin portal | The admin user should see the order and be able to update the order | The admin user saw the order and was able to update the order | Pass |
 
+#### FAQ
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | FAQ Button | Click on the "FAQ" button | The user should be directed to the FAQ page | The user was directed to the FAQ page | Pass |
+| 2 | FAQ Questions | View the FAQ page | The user should see a list of questions | The user saw a list of questions | Pass |
+| 3 | FAQ Interaction | Hover over a question | The question should change to pink | The question changed to pink | Pass |
+| 4 | FAQ Answer | Click on a question | The user should see the answer to the question | The user saw the answer to the question | Pass |
+| 5 | Explore Bakes | Click on the call-to-action button | The user should be directed to the product page | The user was directed to the product page | Pass |
 
 ### User Stories Testing
 - Throughout the development process, user stories were tested to ensure that the site meets user requirements and expectations. The user stories were organized into epics and prioritized based on user needs and feedback. The user stories were tested using manual testing and user feedback to ensure that the site is user-friendly and functional.
