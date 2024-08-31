@@ -163,6 +163,8 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Admin Product CRUD](#admin-product-crud)
       - [Admin Portal](#admin-portal)
       - [User Account](#user-account)
+      - [Contact Page](#contact-page-3)
+      - [Newsletter](#newsletter-1)
     - [User Stories Testing](#user-stories-testing)
     - [Bugs](#bugs)
       - [Resolved Bugs](#resolved-bugs)
@@ -971,6 +973,22 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 14 | Order History | Navigate to the profile page | The user should see their order history | The user saw their order history | Pass |
 | 15 | Order Details | Click on an order | The user should see the order details | The user saw the order details | Pass |
 | 16 | Order Details Message | Click on an order | The user should see a message advising it is a past confirmation and an email was sent on the order date | The user saw a message advising it is a past confirmation and an email was sent on the order date | Pass |
+
+#### Contact Page
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Contact Button | Click on the "Contact Us" button | The user should be directed to the contact page | The user was directed to the contact page | Pass |
+| 2 | Contact Form | Fill in the contact form | The user should be able to fill in the contact form | The user was able to fill in the contact form | Pass |
+| 3 | Contact Form Prompts | Fill in the contact form | The user should see prompts for required fields | The user saw prompts for required fields | Pass |
+| 4 | Contact Form Submit | Submit the contact form | The user should see a success message | The user saw a success message | Pass |
+
+#### Newsletter
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Newsletter Button | Click on the "Subscribe" button | The user should be directed to the newsletter page | The user was directed to the newsletter page | Pass |
+| 2 | Newsletter Form | Fill in the newsletter form | The user should be able to fill in the newsletter form | The user was able to fill in the newsletter form | Pass |
+| 3 | Newsletter Form Prompts | Fill in the newsletter form | The user should see prompts for required fields | The user saw prompts for required fields | Pass |
+| 4 | Newsletter Form Submit | Submit the newsletter form | The user should see a success message | The user saw a success message | Pass |
 
 
 
