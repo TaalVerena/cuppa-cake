@@ -78,45 +78,63 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Blog:](#blog)
     - [Newsletter:](#newsletter-1)
   - [Responsive Design](#responsive-design)
-    - [Home Page](#home-page)
+    - [Landing Page](#landing-page-2)
       - [Desktop](#desktop)
       - [Mobile](#mobile)
-    - [Product Page](#product-page-2)
+    - [Header \& Navigation Bar](#header--navigation-bar)
       - [Desktop](#desktop-1)
       - [Mobile](#mobile-1)
-    - [Product Details Page](#product-details-page-1)
+    - [About Section](#about-section)
       - [Desktop](#desktop-2)
       - [Mobile](#mobile-2)
-    - [FAQ Page](#faq-page)
+    - [Footer](#footer-1)
       - [Desktop](#desktop-3)
       - [Mobile](#mobile-3)
-    - [Contact Page](#contact-page-2)
+    - [Product Page](#product-page-2)
       - [Desktop](#desktop-4)
       - [Mobile](#mobile-4)
-    - [Register Page](#register-page-1)
+    - [Product Details Page](#product-details-page-1)
       - [Desktop](#desktop-5)
       - [Mobile](#mobile-5)
-    - [Login Page](#login-page)
+    - [FAQ Page](#faq-page)
       - [Desktop](#desktop-6)
       - [Mobile](#mobile-6)
-    - [Log Out Page](#log-out-page)
+    - [Contact Page](#contact-page-2)
       - [Desktop](#desktop-7)
       - [Mobile](#mobile-7)
-    - [Profile Page](#profile-page-1)
+    - [Register Page](#register-page-1)
       - [Desktop](#desktop-8)
       - [Mobile](#mobile-8)
-    - [Shopping Cart Page](#shopping-cart-page-1)
+    - [Login Page](#login-page)
       - [Desktop](#desktop-9)
       - [Mobile](#mobile-9)
-    - [Checkout Page](#checkout-page-1)
+    - [Log Out Page](#log-out-page)
       - [Desktop](#desktop-10)
       - [Mobile](#mobile-10)
-    - [Order Confirmation Page](#order-confirmation-page)
+    - [Profile Page](#profile-page-1)
       - [Desktop](#desktop-11)
       - [Mobile](#mobile-11)
-    - [Newsletter Page](#newsletter-page)
+    - [Shopping Cart Page](#shopping-cart-page-1)
       - [Desktop](#desktop-12)
       - [Mobile](#mobile-12)
+    - [Shopping Cart Update Window](#shopping-cart-update-window)
+      - [Desktop](#desktop-13)
+      - [Mobile](#mobile-13)
+    - [Checkout Page](#checkout-page-1)
+      - [Desktop](#desktop-14)
+      - [Mobile](#mobile-14)
+    - [Order Confirmation Page](#order-confirmation-page)
+      - [Desktop](#desktop-15)
+      - [Mobile](#mobile-15)
+    - [Viewing Order History](#viewing-order-history)
+      - [Desktop](#desktop-16)
+      - [Mobile](#mobile-16)
+    - [Viewing Order Details](#viewing-order-details)
+      - [Desktop](#desktop-17)
+      - [Mobile](#mobile-17)
+    - [Newsletter Page](#newsletter-page)
+      - [Desktop](#desktop-18)
+      - [Mobile](#mobile-18)
   - [Web Marketing](#web-marketing)
     - [Advantages](#advantages)
     - [Target Audience](#target-audience)
@@ -520,12 +538,35 @@ The responsive design ensures that the site is accessible and user-friendly on a
 
 ![Responsive Design](README_files/images/am-i-responsive.png)
 
-### Home Page
+### Landing Page
 #### Desktop
-![Home Page Desktop](README_files/images/home-page-desktop.png)
+![Landing Page Desktop](README_files/images/landing-page-desktop.png)
 
 #### Mobile
-![Home Page Mobile](README_files/images/home-page-mobile.png)
+![Landing Page Mobile](README_files/images/landing-page-mobile.png)
+
+### Header & Navigation Bar
+#### Desktop
+![Header Desktop](README_files/images/header-desktop.png)
+
+#### Mobile
+![Header Mobile](README_files/images/header-mobile.png)
+
+### About Section
+#### Desktop
+![About Section Desktop](README_files/images/about-desktop.png)
+
+![About Section Desktop Buttons](README_files/images/about-buttons-desktop.png)
+
+#### Mobile
+![About Section Mobile](README_files/images/about-mobile.png)
+
+### Footer
+#### Desktop
+![Footer Desktop](README_files/images/footer-desktop.png)
+
+#### Mobile
+![Footer Mobile](README_files/images/footer-mobile.png)
 
 ### Product Page
 #### Desktop
@@ -545,12 +586,22 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Desktop
 ![FAQ Desktop](README_files/images/faq-desktop.png)
 
+![FAQ Dropdown Desktop](README_files/images/faq-dropdown-desktop.png)
+
+![FAQ Explore Bakes Desktop](README_files/images/faq-explore-bakes-button-desktop.png)
+
 #### Mobile
 ![FAQ Mobile](README_files/images/faq-mobile.png)
+
+![FAQ Dropdown Mobile](README_files/images/faq-dropdown-mobile.png)
+
+![FAQ Explore Bakes Mobile](README_files/images/faq-explore-bakes-button-mobile.png)
 
 ### Contact Page
 #### Desktop
 ![Contact Desktop](README_files/images/contact-desktop.png)
+
+![Contact Buttons Desktop](README_files/images/contact-buttons-desktop.png)
 
 #### Mobile
 ![Contact Mobile](README_files/images/contact-mobile.png)
@@ -587,15 +638,30 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Desktop
 ![Shopping Cart Desktop](README_files/images/shopping-cart-desktop.png)
 
+![Shopping Cart Total Desktop](README_files/images/shopping-cart-total-desktop.png)
+
 #### Mobile
 ![Shopping Cart Mobile](README_files/images/shopping-cart-mobile.png)
+
+![Shopping Cart Total Mobile](README_files/images/shopping-cart-total-mobile.png)
+
+### Shopping Cart Update Window
+#### Desktop
+![Shopping Cart Update Desktop](README_files/images/shopping-cart-update-desktop.png)
+
+#### Mobile
+![Shopping Cart Update Mobile](README_files/images/shopping-cart-update-mobile.png)
 
 ### Checkout Page
 #### Desktop
 ![Checkout Desktop](README_files/images/checkout-desktop.png)
 
+![Checkout Buttons Desktop](README_files/images/checkout-buttons-desktop.png)
+
 #### Mobile
 ![Checkout Mobile](README_files/images/checkout-mobile.png)
+
+![Checkout Buttons Mobile](README_files/images/checkout-buttons-mobile.png)
 
 ### Order Confirmation Page
 #### Desktop
@@ -604,9 +670,25 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Mobile
 ![Order Confirmation Mobile](README_files/images/order-confirmation-mobile.png)
 
+### Viewing Order History
+#### Desktop
+![Order History Desktop](README_files/images/order-history-desktop.png)
+
+#### Mobile
+![Order History Mobile](README_files/images/order-history-mobile.png)
+
+### Viewing Order Details
+#### Desktop
+![Order Details Desktop](README_files/images/order-details-desktop.png)
+
+#### Mobile
+![Order Details Mobile](README_files/images/order-details-mobile.png)
+
 ### Newsletter Page
 #### Desktop
 ![Newsletter Desktop](README_files/images/newsletter-desktop.png)
+
+![Newsletter Confirmation Desktop](README_files/images/newsletter-confirmation-desktop.png)
 
 #### Mobile
 ![Newsletter Mobile](README_files/images/newsletter-mobile.png)
