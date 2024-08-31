@@ -23,7 +23,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Product Details Page](#product-details-page)
       - [Shopping Bag Page](#shopping-bag-page)
       - [Register Page](#register-page)
-      - [Log In Page](#log-in-page)
+      - [Sign In Page](#sign-in-page)
       - [Contact Page](#contact-page)
     - [Database Schema](#database-schema)
     - [Typography](#typography)
@@ -35,11 +35,11 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Landing Page](#landing-page-1)
         - [Header](#header)
         - [Footer](#footer)
-          - [404 Page](#404-page)
+        - [404 Page](#404-page)
       - [Authentication](#authentication)
-        - [Registration](#registration)
-        - [Login](#login)
-        - [Logout](#logout)
+        - [Registration / Sign Up](#registration--sign-up)
+        - [Sign In](#sign-in)
+        - [Sign Out](#sign-out)
       - [Profile](#profile)
         - [Profile Page](#profile-page)
         - [Edit Profile](#edit-profile)
@@ -112,10 +112,10 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Register Page](#register-page-1)
       - [Desktop](#desktop-8)
       - [Mobile](#mobile-8)
-    - [Login Page](#login-page)
+    - [Sign In Page](#sign-in-page-1)
       - [Desktop](#desktop-9)
       - [Mobile](#mobile-9)
-    - [Log Out Page](#log-out-page)
+    - [Sign Out Page](#sign-out-page)
       - [Desktop](#desktop-10)
       - [Mobile](#mobile-10)
     - [Profile Page](#profile-page-1)
@@ -192,8 +192,8 @@ Each user story addresses the needs and expectations of our users and is organiz
 Below are the epics and user stories developed for Cuppa Cake, each aimed at enhancing the user experience and functionality of the platform:
 1. User Registration & Authentication
     - User Registration
-    - User Login
-    - User Logout
+    - User Sign In
+    - User Sign Out
     - Password Reset
 2. Product Browsing & Search Functionality
     - Product Categories
@@ -260,9 +260,9 @@ Wireframes were created using Figma to visualize the layout and design of the we
 
 ![Wireframe Register Page](/README_files/images/wireframe-register-page.png)
 
-#### Log In Page
+#### Sign In Page
 
-![Wireframe Log In Page](/README_files/images/wireframe-login-page.png)
+![Wireframe Sign In Page](/README_files/images/wireframe-sign-in-page.png)
 
 #### Contact Page
 
@@ -304,26 +304,26 @@ The footer is located at the bottom of the page and includes social media icons,
 
 ![Footer](/README_files/images/footer.png)
 
-###### 404 Page
+##### 404 Page
 A custom 404 page is displayed when users navigate to a page that does not exist. The 404 page includes a message informing users that the page is not found and a link to return to the home page.
 
 ![404 Page](README_files/images/404-page.png)
 
 #### Authentication
-##### Registration
-Users can create an account by providing their username, email address, and password. After registration, users can log in to their account to access additional features such as adding products to the shopping bag and placing orders.
+##### Registration / Sign Up
+Users can create an account by providing their username, email address, and password. After signing up, users can sign in to their account to access additional features such as adding products to the shopping bag and placing orders.
 
-![Register](README_files/images/register.png)
+![Sign Up](README_files/images/sign-up.png)
 
-##### Login
-Users can log in to their account by providing their username and password. After logging in, users can access their account information, view order history, and manage their shopping bag.
+##### Sign In
+Users can sign in to their account by providing their username and password. After signing in, users can access their account information and view order history.
 
-![Login](README_files/images/login.png)
+![Sign In](README_files/images/sign-in.png)
 
-##### Logout
-Users can log out of their account by clicking the logout button. After logging out, users are redirected to the home page and must log in again to access their account.
+##### Sign Out
+Users can sign out of their account by clicking the "Sign Out" button. After signing out, users are redirected to the home page and must sign in again to access their account.
 
-![Logout](README_files/images/logout.png)
+![Sign Out](README_files/images/sign-out.png)
 
 #### Profile
 ##### Profile Page
@@ -677,19 +677,19 @@ The responsive design ensures that the site is accessible and user-friendly on a
 #### Mobile
 ![Register Mobile](README_files/images/register-mobile.png)
 
-### Login Page
+### Sign In Page
 #### Desktop
-![Login Desktop](README_files/images/login-desktop.png)
+![Sign In Desktop](README_files/images/sign-in-desktop.png)
 
 #### Mobile
-![Login Mobile](README_files/images/login-mobile.png)
+![Sign In Mobile](README_files/images/sign-in-mobile.png)
 
-### Log Out Page
+### Sign Out Page
 #### Desktop
-![Log Out Desktop](README_files/images/logout-desktop.png)
+![Sign Out Desktop](README_files/images/signout-desktop.png)
 
 #### Mobile
-![Log Out Mobile](README_files/images/logout-mobile.png)
+![Sign Out Mobile](README_files/images/signout-mobile.png)
 
 ### Profile Page
 #### Desktop
@@ -849,8 +849,8 @@ The robots.txt file was created and uploaded to the root directory of the site.
 |------|-------------|--------|-----------------|---------------|-----------|
 | 1 | Navigation Bar | Click on each link in the navigation bar | The page should navigate to the corresponding section | The page navigated to the correct section | Pass |
 | 2 | Registration | Register a new user account | The user should be able to register a new account | The user was able to register a new account | Pass |
-| 3 | Login | Log in to the user account | The user should be able to log in to the account | The user was able to log in to the account | Pass |
-| 4 | Logout | Log out of the user account | The user should be able to log out of the account | The user was able to log out of the account | Pass |
+| 3 | Sign In | Sign in to the user account | The user should be able to Sign in to the account | The user was able to sign in to the account | Pass |
+| 4 | Sign Out | Sign out of the user account | The user should be able to Sign out of the account | The user was able to sign out of the account | Pass |
 | 5 | Profile | View and edit user profile | The user should be able to view and edit their profile | The user was able to view and edit their profile | Pass |
 | 6 | Products | View product details | The user should be able to view product details | The user was able to view product details | Pass |
 | 7 | Bag | Add products to the shopping bag | The user should be able to add products to the shopping bag | The user was able to add products to the shopping bag | Pass |
