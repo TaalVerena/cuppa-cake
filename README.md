@@ -78,6 +78,45 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Blog:](#blog)
     - [Newsletter:](#newsletter-1)
   - [Responsive Design](#responsive-design)
+    - [Home Page](#home-page)
+      - [Desktop](#desktop)
+      - [Mobile](#mobile)
+    - [Product Page](#product-page-2)
+      - [Desktop](#desktop-1)
+      - [Mobile](#mobile-1)
+    - [Product Details Page](#product-details-page-1)
+      - [Desktop](#desktop-2)
+      - [Mobile](#mobile-2)
+    - [FAQ Page](#faq-page)
+      - [Desktop](#desktop-3)
+      - [Mobile](#mobile-3)
+    - [Contact Page](#contact-page-2)
+      - [Desktop](#desktop-4)
+      - [Mobile](#mobile-4)
+    - [Register Page](#register-page-1)
+      - [Desktop](#desktop-5)
+      - [Mobile](#mobile-5)
+    - [Login Page](#login-page)
+      - [Desktop](#desktop-6)
+      - [Mobile](#mobile-6)
+    - [Log Out Page](#log-out-page)
+      - [Desktop](#desktop-7)
+      - [Mobile](#mobile-7)
+    - [Profile Page](#profile-page-1)
+      - [Desktop](#desktop-8)
+      - [Mobile](#mobile-8)
+    - [Shopping Cart Page](#shopping-cart-page-1)
+      - [Desktop](#desktop-9)
+      - [Mobile](#mobile-9)
+    - [Checkout Page](#checkout-page-1)
+      - [Desktop](#desktop-10)
+      - [Mobile](#mobile-10)
+    - [Order Confirmation Page](#order-confirmation-page)
+      - [Desktop](#desktop-11)
+      - [Mobile](#mobile-11)
+    - [Newsletter Page](#newsletter-page)
+      - [Desktop](#desktop-12)
+      - [Mobile](#mobile-12)
   - [Web Marketing](#web-marketing)
     - [Advantages](#advantages)
     - [Target Audience](#target-audience)
@@ -474,6 +513,103 @@ This ensures that all products are displayed consistently and that admin users c
 - Include product recommendations, recipes, and baking tips in the newsletter.
 
 ## Responsive Design
+
+Cuppa Cake is designed with a responsive layout that adapts to different screen sizes and devices. The site is optimized for desktop, tablet, and mobile devices, providing a seamless and consistent user experience across all platforms.
+
+The responsive design ensures that the site is accessible and user-friendly on all devices, allowing users to browse products, place orders, and contact the business with ease.
+
+![Responsive Design](README_files/images/am-i-responsive.png)
+
+### Home Page
+#### Desktop
+![Home Page Desktop](README_files/images/home-page-desktop.png)
+
+#### Mobile
+![Home Page Mobile](README_files/images/home-page-mobile.png)
+
+### Product Page
+#### Desktop
+![Product Page Desktop](README_files/images/product-page-desktop.png)
+
+#### Mobile
+![Product Page Mobile](README_files/images/product-page-mobile.png)
+
+### Product Details Page
+#### Desktop
+![Product Details Desktop](README_files/images/product-details-desktop.png)
+
+#### Mobile
+![Product Details Mobile](README_files/images/product-details-mobile.png)
+
+### FAQ Page
+#### Desktop
+![FAQ Desktop](README_files/images/faq-desktop.png)
+
+#### Mobile
+![FAQ Mobile](README_files/images/faq-mobile.png)
+
+### Contact Page
+#### Desktop
+![Contact Desktop](README_files/images/contact-desktop.png)
+
+#### Mobile
+![Contact Mobile](README_files/images/contact-mobile.png)
+
+### Register Page
+#### Desktop
+![Register Desktop](README_files/images/register-desktop.png)
+
+#### Mobile
+![Register Mobile](README_files/images/register-mobile.png)
+
+### Login Page
+#### Desktop
+![Login Desktop](README_files/images/login-desktop.png)
+
+#### Mobile
+![Login Mobile](README_files/images/login-mobile.png)
+
+### Log Out Page
+#### Desktop
+![Log Out Desktop](README_files/images/logout-desktop.png)
+
+#### Mobile
+![Log Out Mobile](README_files/images/logout-mobile.png)
+
+### Profile Page
+#### Desktop
+![Profile Desktop](README_files/images/profile-desktop.png)
+
+#### Mobile
+![Profile Mobile](README_files/images/profile-mobile.png)
+
+### Shopping Cart Page
+#### Desktop
+![Shopping Cart Desktop](README_files/images/shopping-cart-desktop.png)
+
+#### Mobile
+![Shopping Cart Mobile](README_files/images/shopping-cart-mobile.png)
+
+### Checkout Page
+#### Desktop
+![Checkout Desktop](README_files/images/checkout-desktop.png)
+
+#### Mobile
+![Checkout Mobile](README_files/images/checkout-mobile.png)
+
+### Order Confirmation Page
+#### Desktop
+![Order Confirmation Desktop](README_files/images/order-confirmation-desktop.png)
+
+#### Mobile
+![Order Confirmation Mobile](README_files/images/order-confirmation-mobile.png)
+
+### Newsletter Page
+#### Desktop
+![Newsletter Desktop](README_files/images/newsletter-desktop.png)
+
+#### Mobile
+![Newsletter Mobile](README_files/images/newsletter-mobile.png)
 
 ## Web Marketing
 Cuppa Cake stands as a B2C e-commerce platform that targets customers looking for high-quality cakes, cake jars, cupcakes, and cake pops. The platform offers a range of products for different occasions, including birthdays, weddings, and special events. Cuppa Cake aims to provide customers with a convenient and enjoyable shopping experience, allowing them to browse through a variety of products, place orders, and contact the business for enquiries.
