@@ -72,7 +72,6 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Contact Page](#contact-page-1)
         - [Contact Form](#contact-form)
       - [Newsletter](#newsletter)
-        - [Newsletter Signup](#newsletter-signup)
     - [Existing Admin Features](#existing-admin-features)
       - [Product Management](#product-management)
         - [Add Product](#add-product)
@@ -83,7 +82,8 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Product Reviews:](#product-reviews)
     - [Minimum Order Quantity:](#minimum-order-quantity)
     - [Blog:](#blog)
-    - [Newsletter:](#newsletter-1)
+    - [Regular Newsletters:](#regular-newsletters)
+    - [FAQ CRUD:](#faq-crud)
   - [Responsive Design](#responsive-design)
     - [Landing Page](#landing-page-2)
       - [Desktop](#desktop)
@@ -495,10 +495,13 @@ Users can send messages to the business by entering their name, email address, a
 ![Contact](README_files/images/contact.png)
 
 #### Newsletter
-##### Newsletter Signup
-Users can sign up for the newsletter by providing their email address. After signing up, users receive email updates about new products, promotions, and special offers.
+Users can sign up for the newsletter by clicking on the "Subscribe" button in the footer and providing their email address. After signing up, users receive a confirmation message and will receive regular updates, promotions, and special offers.
 
-![Newsletter](README_files/images/newsletter.png)
+![Subscribe Button](README_files/images/subscribe-button.png)
+
+![Newsletter Page](README_files/images/newsletter-desktop.png)
+
+![Newsletter Confirmation Page](README_files/images/newsletter-confirmation-desktop.png)
 
 ### Existing Admin Features
 
@@ -567,26 +570,30 @@ This ensures that all products are displayed consistently and that admin users c
 
 ## Future Features
 ### Product Reviews:
-- Allow users to leave reviews and ratings for products.
+- Implement a product review system that allows users to rate and review products.
 
-- Display customer reviews on the product details page.
+- Display customer comments on the product details page.
 
 - Allow users to edit and delete their reviews.
 
 ### Minimum Order Quantity:
-- Set a minimum order quantity for products.
+- Implement a minimum order quantity for products.
 
 - Display a message if the order quantity is below the minimum.
 
 ### Blog:
-- Create a blog with articles about baking, recipes, and cake decorating.
+- Implement a blog with articles about baking, recipes, and cake decorating.
 
 - Share tips, tutorials, and inspiration for baking enthusiasts.
 
-### Newsletter:
+### Regular Newsletters:
 - Send regular newsletters with updates, promotions, and special offers.
 
 - Include product recommendations, recipes, and baking tips in the newsletter.
+
+### FAQ CRUD:
+- Implement CRUD functionality for the FAQ page.
+- Allow admin users to add, edit, and delete FAQ entries.
 
 ## Responsive Design
 
