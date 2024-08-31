@@ -27,7 +27,12 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Contact Page](#contact-page)
     - [Database Schema](#database-schema)
     - [Typography](#typography)
-    - [Color Scheme](#color-scheme)
+    - [Colour Scheme](#colour-scheme)
+      - [Seaside Mist (Aqua):](#seaside-mist-aqua)
+        - [Usage:](#usage)
+      - [Sweet Blush (Pink):](#sweet-blush-pink)
+      - [Colour Palette](#colour-palette)
+        - [Usage:](#usage-1)
   - [Features](#features)
     - [Existing Features](#existing-features)
       - [General Navigation](#general-navigation)
@@ -186,7 +191,6 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Responsiveness](#responsiveness)
     - [Other Tools](#other-tools)
   - [Credits](#credits)
-    - [Content](#content)
     - [Media](#media)
     - [Icons](#icons)
     - [Frame / Guide](#frame--guide)
@@ -289,9 +293,41 @@ The database schema was created using dbdiagram.io. The schema was created to sh
 
 The primary font used for Cuppa Cake is 'Lato', a sans-serif typeface that offers a clean and modern look. The font is used throughout the site for headings, paragraphs, and buttons, ensuring a consistent and professional design.
 
-### Color Scheme
+### Colour Scheme
 
-The color scheme for Cuppa Cake is inspired by the colors of cakes and desserts. The primary colors used are aqua, grey, pink, and white, creating a warm and inviting atmosphere. The colors are used throughout the site to highlight important elements, create contrast, and enhance the overall design.
+The colour scheme for Cuppa Cake is designed to evoke a sense of delight and sophistication, perfectly matching the brand's ethos. The primary colours, which we've creatively named Seaside Mist and Sweet Blush, create a vibrant and harmonious visual experience.
+
+The primary colours used are **Seaside Mist** and **Sweet Blush**, creating a vibrant and inviting atmosphere.
+
+The combination of aqua and pink creates a visually pleasing contrast that is both modern and approachable. These colors work together to reflect the brand's identity—bringing together the freshness and reliability of aqua with the warmth and playfulness of pink. This color scheme is designed to appeal to a wide audience, conveying both professionalism and a sense of fun, making the online shopping experience enjoyable and engaging.
+
+#### Seaside Mist (Aqua):
+
+Seaside Mist captures the refreshing and calming essence of a coastal breeze on a bright morning. This hue is reminiscent of the serene, clear waters that bring a sense of calm and tranquility. It's the perfect colour to represent the fresh, inviting experience that Cuppa Cake offers, evoking feelings of peace and relaxation.
+
+| Swatch | Name | Hex | RGB |
+|--------|------|-----|-----|
+| ![Aqua](https://placehold.it/150x40/80cbc4/000000?text=80cbc4) | **Seaside Mist (Aqua)** | `#80CBC4` | `rgb(128, 203, 196)` |
+
+##### Usage:
+- Header Background: Creating a clean and refreshing look for the site.
+- Footer Background: Creating a grounded and calming base for the page.
+- Buttons: Certain interactive elements like the "Our Bakes" button on home page, providing a cool, inviting touch to these call-to-action elements.
+- Dividers: This colour is also used subtly in dividers, to maintain a cohesive and soothing aesthetic.
+
+#### Sweet Blush (Pink):
+
+Sweet Blush embodies the soft, tender warmth of a light-hearted smile or the first bloom of a delicate flower. This pink hue exudes sweetness and affection, much like the delectable treats Cuppa Cake provides. It’s a color that invites customers to indulge in the playful and joyous spirit of the brand.
+
+#### Colour Palette
+| Swatch | Name | Hex | RGB |
+|--------|------|-----|-----|
+| ![Pink](https://placehold.it/150x40/fc9bbd/000000?text=fc9bbd) | **Sweet Blush (Pink)** | `#FC9BBD` | `rgb(252, 155, 189)` |
+
+##### Usage:
+- Buttons: The "Let's Get Baking" button on the landing page, "Contact Us" and "Subscribe" buttons in the footer, as well as the select buttons throughout the site, making these key interactive elements stand out with a warm, inviting appeal.
+- Headings & Highlighted Text: Used in prominent headings, product names, FAQ and profile page, drawing attention and create a welcoming, friendly atmosphere.
+- Links & Accents: Accentuating important elements, providing a playful contrast against the more serene background.
 
 ## Features
 ### Existing Features
@@ -1023,6 +1059,7 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 9 | Browse Products | Click the call-to-action button | The user should be directed to the product page | The user was directed to the product page | Pass |
 | 10 | View Orders | Navigate to the profile page | The user should see their order history | The user saw their order history | Pass |
 | 11 | Admin Order Update | Navigate to the admin portal | The admin user should see the order and be able to update the order | The admin user saw the order and was able to update the order | Pass |
+| 12 | Email Confirmation | Place an order | The user should receive an email confirmation | The user received an email confirmation | Pass |
 
 #### FAQ
 | Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
@@ -1099,7 +1136,6 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 ### IDE
 [Gitpod](https://www.gitpod.io/) - IDE application used to develop code in.
 
-
 ### Responsiveness
 - [Am I Responsive](https://ui.dev/amiresponsive) - Generates responsive images for your website.
 
@@ -1109,9 +1145,6 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 - [DB Diagram](https://dbdiagram.io/home) - Database Schema Design Tool.
 
 ## Credits
-### Content
-The content for the site was written by the developer.
-
 ### Media
 The product images and favicon were generated using [ChatGPT](https://chatgpt.com/).
 
@@ -1119,7 +1152,7 @@ The product images and favicon were generated using [ChatGPT](https://chatgpt.co
 [Font Awesome](https://fontawesome.com/) - Used for all icons on the site.
 
 ### Frame / Guide
-The Code Institue Boutique Ado walkthrough project was utilized as a frame and guide for the development of this site.
+The Code Institute Boutique Ado walkthrough project was utilized as a frame and guide for the development of this site.
 
 ### Information Resources
 - [W3Schools - Python](https://www.w3schools.com/python/)
