@@ -31,9 +31,9 @@
 </form>
 
 <!-- Link to submit the form and update quantity -->
-<a class="update-link text-info"><small>Update</small></a>
+<a aria-label="Update quantity button" class="update-link text-info"><small>Update</small></a>
 
 <!-- Link to remove the item from the bag -->
-<a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
+<a aria-label="Remove product button" class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
     <small>Remove</small>
 </a>

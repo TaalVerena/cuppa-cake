@@ -73,7 +73,7 @@
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <!-- Wrap the entire card in an anchor tag -->
-                    <a href="{% url 'product_detail' product.id %}" class="text-decoration-none">
+                    <a aria-label="Link to product details" href="{% url 'product_detail' product.id %}" class="text-decoration-none">
                         <div class="card h-100 border-0 position-relative">
                             {% if product.image %}
                             <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}"

@@ -34,7 +34,7 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <!-- Align buttons side by side -->
-                <a href="{% url 'home' %}" class="btn btn-back text-uppercase">Back</a>
+                <a aria-label="Back button" href="{% url 'home' %}" class="btn btn-back text-uppercase">Back</a>
                 <button class="btn btn-update-info text-uppercase">Update</button>
             </form>
         </div>
