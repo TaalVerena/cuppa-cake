@@ -162,6 +162,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Product Details Page](#product-details-page-2)
       - [Admin Product CRUD](#admin-product-crud)
       - [Admin Portal](#admin-portal)
+      - [User Account](#user-account)
     - [User Stories Testing](#user-stories-testing)
     - [Bugs](#bugs)
       - [Resolved Bugs](#resolved-bugs)
@@ -951,11 +952,29 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 9 | Product Flavours | Click on the "Product Flavours" link | The admin user should have access to view and interact with product flavours | The admin user had access to view and interact with product flavours | Pass |
 | 10 | Product Management | Click on the "Products" link | The admin user should have access to view and interact with products | The admin user had access to view and interact with products | Pass |
 
-| 2 | Registration | Register a new user account | The user should be able to register a new account | The user was able to register a new account | Pass |
-| 3 | Sign In | Sign in to the user account | The user should be able to Sign in to the account | The user was able to sign in to the account | Pass |
-| 4 | Sign Out | Sign out of the user account | The user should be able to Sign out of the account | The user was able to sign out of the account | Pass |
-| 5 | Profile | View and edit user profile | The user should be able to view and edit their profile | The user was able to view and edit their profile | Pass |
-| 6 | Products | View product details | The user should be able to view product details | The user was able to view product details | Pass |
+#### User Account
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Registration | Navigate to the registration page | The user should be presented with a registration form | The user was presented with a registration form | Pass |
+| 2 | Registration Form | Fill in the registration form | The user should be able to fill in the registration form | The user was able to fill in the registration form | Pass |
+| 3 | Registration Prompts | Fill in the registration form | The user should see prompts for required fields | The user saw prompts for required fields | Pass |
+| 4 | Registration Success | Submit the registration form | The user should see a success message | The user saw a success message | Pass |
+| 5 | Sign In | Navigate to the sign-in page | The user should be presented with a sign-in form | The user was presented with a sign-in form | Pass |
+| 6 | Valid Sign In | Fill in the sign-in form | The user should be able to sign in | The user was able to sign in | Pass |
+| 7 | Sign In Message | Sign in | The user should see a success message | The user saw a success message | Pass |
+| 8 | Sign Out | Click the "Sign Out" button | The user should be signed out | The user was signed out | Pass |
+| 9 | Sign Out Message | Sign out | The user should see a success message | The user saw a success message | Pass |
+| 10 | Profile | Navigate to the profile page | The user should see their profile information | The user saw their profile information | Pass |
+| 11 | Default Delivery Information | View the profile page | The user should see their default delivery information | The user saw their default delivery information | Pass |
+| 12 | Update Delivery Information | Update the delivery information | The user should be able to update the delivery information | The user was able to update the delivery information | Pass |
+| 13 | Update Delivery Information Message | Update the delivery information | The user should see a success message | The user saw a success message | Pass |
+| 14 | Order History | Navigate to the profile page | The user should see their order history | The user saw their order history | Pass |
+| 15 | Order Details | Click on an order | The user should see the order details | The user saw the order details | Pass |
+| 16 | Order Details Message | Click on an order | The user should see a message advising it is a past confirmation and an email was sent on the order date | The user saw a message advising it is a past confirmation and an email was sent on the order date | Pass |
+
+
+
+
 | 7 | Bag | Add products to the shopping bag | The user should be able to add products to the shopping bag | The user was able to add products to the shopping bag | Pass |
 | 8 | Bag | Remove products from the shopping bag | The user should be able to remove products from the shopping bag | The user was able to remove products from the shopping bag | Pass |
 | 9 | Bag | Adjust product quantity in the shopping bag | The user should be able to adjust product quantity in the shopping bag | The user was able to adjust product quantity in the shopping bag | Pass |
