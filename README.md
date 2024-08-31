@@ -21,7 +21,7 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Landing Page](#landing-page)
       - [Product Page](#product-page)
       - [Product Details Page](#product-details-page)
-      - [Shopping Cart Page](#shopping-cart-page)
+      - [Shopping Bag Page](#shopping-bag-page)
       - [Register Page](#register-page)
       - [Log In Page](#log-in-page)
       - [Contact Page](#contact-page)
@@ -51,9 +51,9 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
         - [Sort Products](#sort-products)
         - [Back to Top Button](#back-to-top-button)
         - [Product Details](#product-details)
-      - [Bag](#bag)
-        - [Bag Page](#bag-page)
-        - [Add to Bag](#add-to-bag)
+      - [Shopping Bag](#shopping-bag)
+        - [Shopping Bag Page](#shopping-bag-page-1)
+        - [Add to Shopping Bag](#add-to-shopping-bag)
         - [Remove from Bag](#remove-from-bag)
         - [Adjust Quantity](#adjust-quantity)
       - [Checkout](#checkout)
@@ -114,10 +114,10 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
     - [Profile Page](#profile-page-1)
       - [Desktop](#desktop-11)
       - [Mobile](#mobile-11)
-    - [Shopping Cart Page](#shopping-cart-page-1)
+    - [Shopping Bag Page](#shopping-bag-page-2)
       - [Desktop](#desktop-12)
       - [Mobile](#mobile-12)
-    - [Shopping Cart Update Window](#shopping-cart-update-window)
+    - [Shopping Bag Update Window](#shopping-bag-update-window)
       - [Desktop](#desktop-13)
       - [Mobile](#mobile-13)
     - [Checkout Page](#checkout-page-1)
@@ -199,10 +199,10 @@ Below are the epics and user stories developed for Cuppa Cake, each aimed at enh
     - Review a Product
     - Edit a Review
     - Delete a Review
-4. Shopping Cart & Checkout
-    - Add to Cart
-    - View Shopping Cart
-    - Remove from Cart
+4. Shopping Bag & Checkout
+    - Add to Bag
+    - View Shopping Bag
+    - Remove from Bag
     - Adjust Quantity
     - Proceed to Checkout
     - Enter Shipping Information
@@ -245,9 +245,9 @@ Wireframes were created using Figma to visualize the layout and design of the we
 
 ![Wireframe Product Details Page](/README_files/images/wireframe-product-details-page.png)
 
-#### Shopping Cart Page
+#### Shopping Bag Page
 
-![Wireframe Shopping Cart](/README_files/images/wireframe-shopping-cart.png)
+![Wireframe Shopping Bag](/README_files/images/wireframe-shopping-bag.png)
 
 #### Register Page
 
@@ -278,7 +278,7 @@ The color scheme for Cuppa Cake is inspired by the colors of cakes and desserts.
 ### Existing Features
 #### General Navigation
 ##### Navigation Bar
-The navigation bar is located at the top of the page and provides easy access to the main sections of the site. The navigation bar includes links to the home page, product categories, search functionality, user account, shopping cart, and contact page.
+The navigation bar is located at the top of the page and provides easy access to the main sections of the site. The navigation bar includes links to the home page, product categories, search functionality, user account, shopping bag, and contact page.
 
 ![Navigation Bar](/README_files/images/navigation-bar.png)
 
@@ -304,12 +304,12 @@ A custom 404 page is displayed when users navigate to a page that does not exist
 
 #### Authentication
 ##### Registration
-Users can create an account by providing their username, email address, and password. After registration, users can log in to their account to access additional features such as adding products to the shopping cart and placing orders.
+Users can create an account by providing their username, email address, and password. After registration, users can log in to their account to access additional features such as adding products to the shopping bag and placing orders.
 
 ![Register](README_files/images/register.png)
 
 ##### Login
-Users can log in to their account by providing their username and password. After logging in, users can access their account information, view order history, and manage their shopping cart.
+Users can log in to their account by providing their username and password. After logging in, users can access their account information, view order history, and manage their shopping bag.
 
 ![Login](README_files/images/login.png)
 
@@ -320,7 +320,7 @@ Users can log out of their account by clicking the logout button. After logging 
 
 #### Profile
 ##### Profile Page
-Users can view and edit their profile information, including their contact number and address. The profile page also displays the user's order history and allows users to manage their shopping cart.
+Users can view and edit their profile information, including their contact number and address. The profile page also displays the user's order history and allows users to manage their shopping bag.
 
 ![Profile](README_files/images/profile.png)
 
@@ -335,7 +335,7 @@ After editing their profile, users can save the changes and update their account
 
 #### Products
 ##### Product Page
-The product page displays a list of products available for purchase. Users can view product details, add products to the shopping cart, and filter products by category.
+The product page displays a list of products available for purchase. Users can view product details, add products to the shopping bag, and filter products by category.
 
 ![All Bakes](README_files/images/all-bakes.png)
 
@@ -379,25 +379,35 @@ Users can view detailed information about each product, including the product na
 
 ![Product Details](README_files/images/product-details.png)
 
-Users are able to add products to the shopping cart by clicking the "Add to Bag" button on the product details page.
+Users are able to add products to the shopping bag by clicking the "Add to Bag" button on the product details page.
 
 ![Add to Bag](README_files/images/add-to-bag.png)
 
-#### Bag
-##### Bag Page
-The bag page displays a list of products added to the shopping bag. Users can view product details, adjust product quantities, and remove products from the bag.
+#### Shopping Bag
+##### Shopping Bag Page
+The shopping bag page displays a list of products added to the bag. Users can view product details, adjust product quantities, and remove products from the bag.
 
 ![Shopping Bag](README_files/images/shopping-bag.png)
 
-##### Add to Bag
-Users can add products to the shopping bag by clicking the "Add to Bag" button on the product details page. After adding a product to the bag, users can view the product in the shopping bag.
+![Shopping Bag Increment Button](README_files/images/shopping-bag-increment-button.png)
 
-![Add to Bag](README_files/images/shopping-bag.png)
+![Shopping Bag Icon](README_files/images/shopping-bag-icon.png)
+
+##### Add to Shopping Bag
+Users can add products to the shopping bag by clicking the "Add to Bag" button on the product details page. 
+
+![Add to Bag Button](README_files/images/add-to-bag-button.png)
+
+After adding a product to the bag, users receive a confirmation message and can view the product in the shopping bag.
+
+![Add to Bag Message](README_files/images/add-to-bag-message.png)
+
+![Shopping Bag](README_files/images/shopping-bag.png)
 
 ##### Remove from Bag
 Users can remove products from the shopping bag by clicking the "Remove" button next to the product. After removing a product from the bag, users can update the shopping bag.
 
-![Remove from Bag](README_files/images/shopping-bag.png)
+![Remove from Bag Button](README_files/images/remove-from-bag-button.png)
 
 ##### Adjust Quantity
 Users can adjust the quantity of products in the shopping bag by entering the desired quantity in the quantity field. After adjusting the quantity, users can update the shopping bag.
@@ -642,23 +652,23 @@ The responsive design ensures that the site is accessible and user-friendly on a
 
 ![Profile Order History Mobile](README_files/images/order-history-mobile.png)
 
-### Shopping Cart Page
+### Shopping Bag Page
 #### Desktop
-![Shopping Cart Desktop](README_files/images/shopping-cart-desktop.png)
+![Shopping Bag Desktop](README_files/images/shopping-bag-desktop.png)
 
-![Shopping Cart Total Desktop](README_files/images/shopping-cart-total-desktop.png)
+![Shopping Bag Total Desktop](README_files/images/shopping-bag-total-desktop.png)
+
+#### MobileF
+![Shopping Bag Total Mobile](README_files/images/shopping-bag-total-mobile.png)
+
+![Shopping Bag Mobile](README_files/images/shopping-bag-mobile.png)
+
+### Shopping Bag Update Window
+#### Desktop
+![Shopping Bag Update Desktop](README_files/images/shopping-bag-update-desktop.png)
 
 #### Mobile
-![Shopping Cart Total Mobile](README_files/images/shopping-cart-total-mobile.png)
-
-![Shopping Cart Mobile](README_files/images/shopping-cart-mobile.png)
-
-### Shopping Cart Update Window
-#### Desktop
-![Shopping Cart Update Desktop](README_files/images/shopping-cart-update-desktop.png)
-
-#### Mobile
-![Shopping Cart Update Mobile](README_files/images/shopping-cart-update-mobile.png)
+![Shopping Bag Update Mobile](README_files/images/shopping-bag-update-mobile.png)
 
 ### Checkout Page
 #### Desktop
