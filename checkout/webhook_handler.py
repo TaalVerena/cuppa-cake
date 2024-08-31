@@ -14,13 +14,17 @@ import time
 
 
 class StripeWH_Handler:
-    """Handle Stripe webhooks"""
+    """
+    Handle Stripe webhooks
+    """
 
     def __init__(self, request):
         self.request = request
 
     def _send_confirmation_email(self, order):
-        """Send the user a confirmation email"""
+        """
+        Send the user a confirmation email
+        """
         cust_email = order.email
         subject = render_to_string(
             "checkout/confirmation_emails/confirmation_email_subject.txt",
@@ -117,13 +121,13 @@ class StripeWH_Handler:
                     for item_id, item_data in json.loads(bag).items():
                         product = Product.objects.get(
                             id=item_id
-                        )  # Assuming product ID is used
+                        ) 
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
                             quantity=item_data,
                             lineitem_total=product.price
-                            * item_data,  # Assuming price exists in Product model
+                            * item_data,
                         )
                         order_line_item.save()
             except Exception as e:
