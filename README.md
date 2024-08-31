@@ -160,6 +160,8 @@ Cuppa Cake is built with Django, a high-level Python web framework, and uses Pos
       - [Footer](#footer-2)
       - [Product Page](#product-page-3)
       - [Product Details Page](#product-details-page-2)
+      - [Admin Product CRUD](#admin-product-crud)
+      - [Admin Portal](#admin-portal)
     - [User Stories Testing](#user-stories-testing)
     - [Bugs](#bugs)
       - [Resolved Bugs](#resolved-bugs)
@@ -910,8 +912,44 @@ Manual testing was conducted to ensure that the site is user-friendly, functiona
 | 7 | Increment Button | Click the increment button | The quantity should increase by 1 | The quantity increased by 1 | Pass |
 | 8 | Decrease Button | Click the decrement button | The quantity should decrease by 1 | The quantity decreased by 1 | Pass |
 | 9 | Manual Quantity Entry | Enter a quantity manually | The quantity should update to the entered value | The quantity updated to the entered value | Pass |
-| 10 | Admin User | View the edit and delete buttons | The admin user should see the edit and delete buttons | The admin user saw the edit and delete buttons | Pass |
-| 11 | Guest User | View the product details | The guest user should not see the edit and delete buttons | The guest user did not see the edit and delete buttons | Pass |
+
+#### Admin Product CRUD
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Edit and Delete Buttons | View a product | The admin user should see edit and delete buttons | The admin user saw edit and delete buttons | Pass |
+| 2 | Guest User Buttons | View a product | The guest user should not see edit and delete buttons | The guest user did not see edit and delete buttons | Pass |
+| 3 | Edit Product | Click the "Edit" button | The admin user should be directed to the edit product page | The admin user was directed to the edit product page | Pass |
+| 4 | Edit Product Details Populated | Click the "Edit" button | The admin user should see the product details populated in the form | The admin user saw the product details populated in the form | Pass |
+| 5 | Edit Product Details | Update the product details | The admin user should be able to update the product details | The admin user was able to update the product details | Pass |
+| 6 | Edit Product Success | Click the "Update Product" button | The admin user should see a success message | The admin user saw a success message | Pass |
+| 7 | Edit Product Cancel | Click the "Cancel" button | The admin user should be directed back to the products page | The admin user was directed back to the products page | Pass |
+| 8 | Delete Product | Click the "Delete" button | The admin user should see a confirmation message | The admin user saw a confirmation message | Pass |
+| 9 | Add Product | Click the "Product Management" link | The admin user should be directed to the product management page | The admin user was directed to the product management page | Pass |
+| 10 | Add Product Form | Click the "Product Management" link | The admin user should see the add product form | The admin user saw the add product form | Pass |
+| 11 | Add Product Details | Enter the product details | The admin user should be able to add a new product | The admin user was able to add a new product | Pass |
+| 12 | Add Product Success | Click the "Add Product" button | The admin user should see a success message | The admin user saw a success message | Pass |
+| 13 | Product Added | Click the "Add Product" button | The admin user should see the new product added to the product list | The admin user saw the new product added to the product list | Pass |
+| 14 | Add Product Cancel | Click the "Cancel" button | The admin user should be directed back to the products page | The admin user was directed back to the products page | Pass |
+| 15 | Non-Signed In User Add Product | Navigate to the "Product Management" page | The non-signed in user should be directed to the sign-in page | The non-signed in user was directed to the sign-in page | Pass |
+| 16 | Non-Admin User Add Product | Navigate to the "Product Management" page | The non-admin user should be directed to the home page & see a message advising that only store owners can do this | The non-admin user was directed to the home page & saw a message advising that only store owners can do this | Pass |
+| 17 | Non-Signed In User Edit Product | Navigate to the "Edit" page | The non-signed in user should be directed to the sign-in page | The non-signed in user was directed to the sign-in page | Pass |
+| 18 | Non-Admin User Edit Product | Navigate to the "Edit" page | The non-admin user should be directed to the home page & see a message advising that only store owners can do this | The non-admin user was directed to the home page & saw a message advising that only store owners can do this | Pass |
+| 19 | Non-Signed In User Delete Product | Navigate to the "Delete" page | The non-signed in user should be directed to the sign-in page | The non-signed in user was directed to the sign-in page | Pass |
+| 20 | Non-Admin User Delete Product | Navigate to the "Delete" page | The non-admin user should be directed to the home page & see a message advising that only store owners can do this | The non-admin user was directed to the home page & saw a message advising that only store owners can do this | Pass |
+
+#### Admin Portal
+| Test | Description | Method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | Admin User Access | Sign in as an admin user | The admin user should be able to access the admin portal | The admin user was able to access the admin portal | Pass |
+| 2 | Non-Admin User Access | Sign in as a non-admin user | The non-admin user should not be able to access the admin portal | The non-admin user was not able to access the admin portal | Pass |
+| 3 | Admin Portal Navigation | View the admin portal | The admin user should see options for product management | The admin user saw options for product management | Pass |
+| 4 | View Accounts | Click on the "Email Addresses" link | The admin user should have access to view and interact with accounts | The admin user had access to view and interact with accounts | Pass |
+| 5 | View Orders | Click on the "Orders" link | The admin user should have access to view and interact with orders | The admin user had access to view and interact with orders | Pass |
+| 6 | View Contact Messages | Click on the "Contacts" link | The admin user should have access to view and interact with contact messages | The admin user had access to view and interact with contact messages | Pass |
+| 7 | View FAQ | Click on the "FAQ" link | The admin user should have access to view and interact with the FAQ | The admin user had access to view and interact with the FAQ | Pass |
+| 8 | Product Categories | Click on the "Product Categories" link | The admin user should have access to view and interact with product categories | The admin user had access to view and interact with product categories | Pass |
+| 9 | Product Flavours | Click on the "Product Flavours" link | The admin user should have access to view and interact with product flavours | The admin user had access to view and interact with product flavours | Pass |
+| 10 | Product Management | Click on the "Products" link | The admin user should have access to view and interact with products | The admin user had access to view and interact with products | Pass |
 
 | 2 | Registration | Register a new user account | The user should be able to register a new account | The user was able to register a new account | Pass |
 | 3 | Sign In | Sign in to the user account | The user should be able to Sign in to the account | The user was able to sign in to the account | Pass |
